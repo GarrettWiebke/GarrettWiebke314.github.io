@@ -9,7 +9,7 @@ The following sections describe the functional and component requirements for th
 |-----------------------------| ----------------- | ----------------- | :-----: |
 | Surface mounted, 3.3V switching power regulatore | 3.2 Volts | 3.3 Volts | No |
 | Surface mounted microcontroller | 1 PIC or ESP | 8-bit PIC | No |
-| Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT whether or not the system is moving | No |
+| Wireless Communication | Able to send or receive a Wi-Fi data | Send and receive Wi-Fi Data to MQTT whether or not the system is moving | yes |
 | 12V Gear motor  | Able to effectively move whole system | Move quickly and efficiently | No |
 |Motor mounted propeller  | Able to spin on the motor shaft  | A slipless spin for efficient forward or backward movement | No |
 | Water Proof System  | Devices functionality when fully submerged underwater  | Full funcionality when fully submerged | yes |
