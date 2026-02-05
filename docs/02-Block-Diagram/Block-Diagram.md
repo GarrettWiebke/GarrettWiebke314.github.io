@@ -1,24 +1,24 @@
 ---
-title: Module's Block Diagram
+title: Actuation Module's Block Diagram 
 tags:
 - tag1
 - tag2
 ---
 
 ## Overview
-This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...
+This is the Actuation block diagream for Team 307 made by Garrett Wiebke
+Features include:
+* 12V external power Supply, 3.3V 1.5A switching regulator 
+* 12V High-Power 25Dmm Gearmotor 
+* 12V 3A AC-DC wall power supply
+* Communication via ESP 32 WiFi Module 
+* Display OLED 
+* Indicator LEDS
+* Robust upstream/downstream headers 
 
-To get some initial formatting help, one can view ["here"](https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/) some basic techniques.
 
 
-## Example Block Diagram 
-Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.
 
-![Example of Indivial Block diagram ](individual-block-diagram.png)
+## Actuation Block Diagram 
+
+![Team 307 Actuation Block Diagram](image.png)
