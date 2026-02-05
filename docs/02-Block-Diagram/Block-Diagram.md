@@ -8,6 +8,7 @@ tags:
 ## Overview
 This is the Actuation block diagream for Team 307 made by Garrett Wiebke
 Features include:
+
 * 12V external power Supply, 3.3V 1.5A switching regulator 
 * 12V High-Power 25Dmm Gearmotor 
 * 12V 3A AC-DC wall power supply
@@ -21,4 +22,4 @@ Features include:
 
 ## Actuation Block Diagram 
 
-![Team 307 Actuation Block Diagram](image.png)
+![Team 307 Actuation Block Diagram](image-1.png)
