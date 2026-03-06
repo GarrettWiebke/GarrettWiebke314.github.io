@@ -1,65 +1,147 @@
+# 3-Axis Motion Motors
+
+## Brushless DC Motor + Propeller for Propulsion
+
 ---
-title: Module's Selected Major Components
+
+*Table 1: BLDC Motor Option 1*
+
+**EMAX Pro Series 2814 730KV Brushless Motor**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image1.png)<br>EMAX Pro Series 2814 730KV Brushless Motor<br>$31.99 each<br>[link to product](http://readymaderc.com) | * Higher thrust capabilities<br>* Efficient for longer run times<br>* Reliable drone-specific BLDC motor<br>* Powerful | * Higher power requirements than desired<br>* Expensive including required components |
+
+**Specifications**
+
+- Model: EMAX Pro Series 2814 730KV Brushless Motor  
+- KV: 730KV  
+- Recommended Propeller: 8-10 inch  
+- Max Thrust: Up to 2.3 kg (depending on prop configuration)  
+- Motor Type: Brushless  
+- Voltage: 6S LiPo (22.2V)  
+- Weight: 155 g  
+- Shaft Diameter: 5 mm  
+
 ---
 
-## Module's Selected Major Components
+*Table 2: BLDC Motor Option 2*
 
-The following sections are the selected major components necessary for  .....
+**DD2216 12V 500KV Waterproof ROV Brushless Motor**
 
->**For each of the following sections, use <ins>one of the two styles</ins> given near the end. *REMOVE THIS NOTE***
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image2.png)<br>DD2216 12V 500KV Waterproof ROV Motor<br>$30.00 each<br>[link to product](http://hobbywater.com) | * Water-specific BLDC motor<br>* Working voltage in the desired range<br>* Low-profile package | * Cannot be tested in air<br>* Cooling limitations for extended operation<br>* Limited space for large propeller |
 
-### Power Management
+**Specifications**
 
-(**remove this note/placeholder**: this is where your 3.3 volt switching regulator, any other needed power regulator, and power source {if applicable} **THAT WERE SELECTED**)
+- Motor KV: 500  
+- Power: 87 W  
+- Load Current: 7.3 A  
+- Working Voltage: 12-16 V  
+- Thrust: 1.2 kg (at 12 V)  
+- Maximum Speed: 6100 RPM  
+- Dimensions: Diameter 28 mm, Height 38.5 mm  
+- Waterproof Depth: Up to 300 m  
 
-For more details, review the ["Appendix - Component Selection Process - Power Mangement"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#power-management) selection.
+---
 
-### Sensor
+*Table 3: BLDC Motor Option 3*
 
-(**remove this note/placeholder**: if applicable, this is where your  **SELECTED** sensor is shown. Otherwise, remove this section.)
+**RC Boat Brushless Motor 12-24V 300KV Underwater Thruster**
 
-For more details, review the ["Appendix - Component Selection Process - Sensor"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#sensor) selection.
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image3.png)<br>RC Boat Brushless Motor 300KV<br>[link to product](http://fruugo.us) | * Water-specific design<br>* Good depth rating<br>* Small profile<br>* Operates within desired voltage range<br>* Built-in propeller | * Least powerful BLDC option<br>* Requires additional waterproof sealing<br>* Lower durability materials |
 
-### Actuator
+**Key Specifications**
 
-(**remove this note/placeholder**: if applicable, this is where your **Selected** the actuator items go, which includes both the driver and motor. Otherwise, remove this section.)
+- Voltage: 12-24 V  
+- Current: 20 A  
+- KV: 300 KV  
+- Materials: Stainless steel bearings, aluminum alloy shell  
+- Propeller compatibility: Designed for PLA and PC propellers  
+- Rotation options: Clockwise and counterclockwise available  
 
-For more details, review the ["Appendix - Component Selection Process - Actuator"](https://embedded-systems-design.github.io/EGR314DataSheetTemplate/Appendix/01-Componet-Selection/Component-Selection-Process/#actuator) selection.
+---
 
------------
-> Remove the following before submitting! Use them to present the selected components
+*Table 4: BLDC Motor Option 4*
 
-### Style 1
+**Underwater Brushless Motor 300KV for RC Boat Thruster**
 
-> This is the example found in the assignment, uses more html
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image4.png)<br>Underwater Brushless Motor 300KV<br>$35.95 each<br>[link to product](http://fruugo.us) | * Water-specific motor<br>* Propeller included | * Low durability materials |
 
-*Table 1: Example component selection*
+**Specifications**
 
-**External Clock Module**
+- Motor KV: 300  
+- Working Voltage: 12-24 V  
 
-| **Component**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
+---
 
-**Rationale:** A clock oscillator is easier ....
+*Table 5: BLDC Motor Option 5*
 
-### Style 2
+**SunnySky X2826 Brushless Motor**
 
-> Also acceptable, more markdown friendly
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image5.png)<br>SunnySky X2826 Brushless Motor<br>$39.99 each<br>[link to product](http://fruugo.us) | * Good power range<br>* Reliable supplier<br>* Good datasheet documentation | * Not water-specific |
 
-**External Clock Module**
+**Specifications**
 
-1. XC1259TR-ND surface mount crystal
+- Available KV Ratings: 550 KV or 800 KV  
 
-    ![](image1.png)
+---
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+*Table 6: BLDC Motor Option 6*
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+**SunnySky X2820 Brushless Motor**
 
-**Rationale:** A clock oscillator is easier ...
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image6.png)<br>SunnySky X2820 Brushless Motor<br>$34.99 each | * Durable high-strength materials<br>* Relatively lightweight<br>* Good heat dissipation<br>* Quiet operation | * Not water-specific<br>* Relatively low torque |
+
+**Specifications**
+
+- Material: 420 stainless steel  
+- Housing: High-strength aluminum alloy  
+- KV: 500 KV  
+- Shaft: Long or short shaft versions available  
+
+---
+
+*Table 7: BLDC Motor Option 7*
+
+**ApisQueen U2 Mini Underwater Thruster**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image7.png)<br>ApisQueen U2 Mini Underwater Thruster<br>$42.00 each<br>[link to product](https://cdn.shopify.com/s/files/1/0621/5493/2452/files/U2_Mini.igs?v=1700659409) | * Very high RPM<br>* Integrated propeller and ESC<br>* Marine-specific thruster design<br>* Corrosion-resistant composite housing | * Very low torque |
+
+**Specifications**
+
+- Model: U2 Mini  
+- Operating Environment: Freshwater or seawater  
+- Voltage: 12-16 V (3-4S LiPo)  
+- Maximum Current: 8 A  
+- Maximum Power: 130 W  
+- Size: 95.8 mm × 77 mm  
+- Cable Length: > 900 mm  
+- Weight: 210 g  
+- PWM Signal: 1-2 ms at 50 Hz  
+
+**Features**
+
+- One-piece composite housing with corrosion resistance  
+- Low power consumption and high efficiency  
+- Protective ribs prevent foreign objects from entering the propeller  
+- Uses a 500 KV brushless motor  
+
+---
+
+## BLDC Choice: Option 7 — ApisQueen U2 Mini Underwater Thruster
+
+**Rationale**
+
+The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and an integrated propeller and ESC. This significantly simplifies propulsion integration while maintaining efficient power usage. Its corrosion-resistant construction and compatibility with both freshwater and seawater environments make it well suited for the underwater operation required by the system.
