@@ -350,3 +350,80 @@ The MG995 servo operates within the desired voltage range and is already availab
 **Rationale**
 
 The ESP32-S3-WROOM-1 module provides a strong balance between performance and ease of development. It offers built-in WiFi and Bluetooth capabilities, making wireless communication possible without additional hardware. The module also supports SPI communication, which simplifies integration with motor drivers and other peripherals. Compared to the smaller ESP32-S3-MINI package, the WROOM module is easier to work with and debug during development.
+
+# Regular DC Motor
+
+---
+
+*Table 17: DC Motor Option 1*
+
+**GEARMOTOR 140 RPM 6–24V**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](DC1.png)<br>GEARMOTOR 140 RPM 6–24V<br>$7.12 each<br>[link to product](https://www.digikey.com/en/products/detail/sparkfun-electronics/15277/9995750) | * High torque output<br>* Easy to control<br>* Wide operating voltage range | * Lower RPM (slower speed)<br>* Larger than some other motor options |
+
+**Specifications**
+
+- Type: DC Motor  
+- Function: Gearmotor  
+- Motor Type: Brushed  
+- Rated Voltage: 6 – 24 VDC  
+- Speed: 140 RPM  
+- Rated Torque: 20.83 oz-in (147.1 mNm)  
+- Rated Power: 1.6 W  
+- Diameter: 22 mm (0.866 in)  
+- Shaft Diameter: 6 mm (0.236 in)  
+- Shaft Length: 14 mm (0.551 in)  
+- Mounting Hole Spacing: 18 mm (0.709 in)  
+- Termination Style: Solder Tab  
+
+---
+
+*Table 18: DC Motor Option 2*
+
+**STANDARD MOTOR 12850 RPM 12V**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](DC2.png)<br>STANDARD MOTOR 12850 RPM 12V<br>[link to product](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070) | * Extremely high rotational speed | * Easy to stall<br>* Requires significant gear reduction |
+
+**Specifications**
+
+- Type: DC Motor  
+- Function: Standard Motor  
+- Motor Type: Brushed  
+- Rated Voltage: 12 VDC  
+- Speed: 12,850 RPM  
+- Rated Torque: 0.694 oz-in (4.9 mNm)  
+- Diameter: 24.2 mm (0.953 in)  
+- Shaft Diameter: 1.5 mm (0.059 in)  
+- Shaft Length: 11.5 mm (0.453 in)  
+- Termination Style: Connector  
+
+---
+
+*Table 19: DC Motor Option 3*
+
+**STANDARD MOTOR 6600 RPM 12V**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](DC3.png)<br>STANDARD MOTOR 6600 RPM 12V<br>[link to product](https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657) | * Moderate rotational speed | * Low torque<br>* Harder to control precisely |
+
+**Specifications**
+
+- Type: DC Motor  
+- Function: Standard Motor  
+- Rated Voltage: 12 VDC  
+- Speed: 6,600 RPM  
+- Termination Style: Wire Leads  
+
+---
+
+## DC Motor Choice: Option 1 — GEARMOTOR 140 RPM 6–24V
+![](DC1.png)
+
+**Rationale**
+
+This gearmotor provides high torque with a manageable rotational speed, making it well suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.
