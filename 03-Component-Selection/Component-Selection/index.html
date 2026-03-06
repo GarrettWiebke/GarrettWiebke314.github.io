@@ -1421,6 +1421,111 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DC1.png" data-desc-position="bottom"><img alt="" src="../DC1.png"></a></p>
 <p><strong>Rationale</strong></p>
 <p>This gearmotor provides high torque with a manageable rotational speed, making it well suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.</p>
+<h1 id="smt-motor-driver">SMT Motor Driver</h1>
+<hr>
+<p><em>Table 20: Motor Driver Option 1</em></p>
+<p><strong>L9958 Motor Driver (STMicroelectronics)</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Driver1.png" data-desc-position="bottom"><img alt="" src="../Driver1.png"></a><br>L9958 Motor Driver IC<br>$8.14 each<br><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L9958/2746837">link to product</a></td>
+<td>* SPI controlled interface<br><em> Integrated H-bridge driver<br></em> Supports wide motor voltage range</td>
+<td>* Slightly limited logic supply voltage</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Manufacturer: STMicroelectronics  </li>
+<li>Motor Type Supported: Brushed DC, Bipolar Stepper  </li>
+<li>Driver Type: Fully integrated motor driver  </li>
+<li>Output Configuration: Half Bridge (2)  </li>
+<li>Interface: SPI  </li>
+<li>Technology: CMOS  </li>
+<li>Output Current: 8.6 A  </li>
+<li>Supply Voltage: 4.5 – 5.5 V  </li>
+<li>Load Voltage Range: 4 – 28 V  </li>
+<li>Operating Temperature: -40°C to 150°C  </li>
+<li>Mounting Type: Surface Mount  </li>
+<li>Package: PowerSO-20  </li>
+</ul>
+<hr>
+<p><em>Table 21: Motor Driver Option 2</em></p>
+<p><strong>DRV8701 Motor Driver (Texas Instruments)</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Driver2.png" data-desc-position="bottom"><img alt="" src="../Driver2.png"></a><br>DRV8701 Motor Driver IC<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/DRV8701PRGET/5299247">link to product</a></td>
+<td>* High voltage support<br>* Flexible current management</td>
+<td>* Requires external MOSFET H-bridge<br>* More complex circuit design</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Manufacturer: Texas Instruments  </li>
+<li>Motor Type Supported: Brushed DC  </li>
+<li>Function: Motor Controller with Current Management  </li>
+<li>Output Configuration: Pre-driver Half Bridge  </li>
+<li>Interface: PWM  </li>
+<li>Technology: Power MOSFET Driver  </li>
+<li>Supply Voltage: 5.9 – 45 V  </li>
+<li>Load Voltage: 5.9 – 45 V  </li>
+<li>Operating Temperature: -40°C to 125°C  </li>
+<li>Mounting Type: Surface Mount  </li>
+<li>Package: 24-VQFN  </li>
+</ul>
+<hr>
+<p><em>Table 22: Motor Driver Option 3</em></p>
+<p><strong>MC33926 Motor Driver (NXP)</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Driver3.png" data-desc-position="bottom"><img alt="" src="../Driver3.png"></a><br>MC33926 Motor Driver IC<br><a href="https://www.nxp.com/products/MC33926">link to product</a></td>
+<td>* SPI communication capability<br><em> Easy motor control integration<br></em> Low profile design</td>
+<td>* Complex package and integration</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Manufacturer: NXP Semiconductors  </li>
+<li>Operating Voltage: 8 – 28 V continuous (5 – 40 V transient)  </li>
+<li>Maximum RDS(on): 225 mΩ (per MOSFET)  </li>
+<li>Logic Input Compatibility: 3.0 V and 5.0 V TTL/CMOS  </li>
+<li>Protection Features:  </li>
+<li>Overcurrent limiting  </li>
+<li>Short circuit protection  </li>
+<li>Thermal protection  </li>
+<li>Low Power Mode: &lt; 50 µA sleep current  </li>
+<li>Mounting Type: Surface Mount  </li>
+</ul>
+<hr>
+<h2 id="motor-driver-choice-option-1-l9958-motor-driver">Motor Driver Choice: Option 1 — L9958 Motor Driver</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Driver1.png" data-desc-position="bottom"><img alt="" src="../Driver1.png"></a></p>
+<p><strong>Rationale</strong></p>
+<p>The L9958 motor driver provides a fully integrated motor control solution with an SPI interface, allowing the microcontroller to easily communicate with and control the motor system. The integrated H-bridge simplifies circuit design and reduces the number of additional components required on the PCB. Its wide load voltage range and high current capability also make it well suited for driving the selected DC motor within the system.</p>
 
 
 
