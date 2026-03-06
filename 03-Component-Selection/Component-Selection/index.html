@@ -1235,6 +1235,93 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Servo1.png" data-desc-position="bottom"><img alt="" src="../Servo1.png"></a></p>
 <p><strong>Rationale</strong></p>
 <p>The MG995 servo operates within the desired voltage range and is already available for use in the project, effectively reducing cost within the actuation subsystem. While the torque may be somewhat limited for certain steering loads, it remains adequate for the initial design and testing stages. If additional torque becomes necessary, Option 3 (MG90D) can be used as a fallback alternative.</p>
+<h1 id="microcontroller">Microcontroller</h1>
+<hr>
+<p><em>Table 14: Microcontroller Option 1</em></p>
+<p><strong>PIC18F47K42 Microcontroller</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Micro1.png" data-desc-position="bottom"><img alt="" src="../Micro1.png"></a><br>PIC18F47K42 Microcontroller<br>$2.79 each<br><a href="https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-I-PT/7561733">link to product</a></td>
+<td>* Inexpensive<br>* Easy debugging tools available</td>
+<td>* Requires Microchip IDE environment</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Microcontroller Family: PIC18  </li>
+<li>Package Type: Surface Mount  </li>
+<li>Core: 8-bit MCU  </li>
+<li>Development Environment: Microchip MPLAB IDE  </li>
+<li>Manufacturer: Microchip Technology  </li>
+</ul>
+<hr>
+<p><em>Table 15: Microcontroller Option 2</em></p>
+<p><strong>ESP32-S3-WROOM-1-N4</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Micro2.png" data-desc-position="bottom"><img alt="" src="../Micro2.png"></a><br>ESP32-S3-WROOM-1-N4 Module<br>$5.06 each<br><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639">link to product</a></td>
+<td>* Easy coding environment<br><em> Strong SPI integration<br></em> Integrated WiFi and Bluetooth capability</td>
+<td>* Slightly more expensive</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Processor: Dual-core Xtensa LX7  </li>
+<li>Wireless Connectivity: WiFi and Bluetooth  </li>
+<li>Interface Support: SPI, I2C, UART, PWM  </li>
+<li>Package Type: Module with integrated antenna  </li>
+<li>Manufacturer: Espressif Systems  </li>
+</ul>
+<hr>
+<p><em>Table 16: Microcontroller Option 3</em></p>
+<p><strong>ESP32-S3-MINI-1</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Micro3.png" data-desc-position="bottom"><img alt="" src="../Micro3.png"></a><br>ESP32-S3-MINI-1 Module<br>$5.28 each<br><a href="https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1U-N8/17728863">link to product</a></td>
+<td>* Extremely small package<br><em> Integrated WiFi and Bluetooth<br></em> USB support</td>
+<td>* Harder to work with due to small form factor</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Processor: Dual-core Xtensa LX7  </li>
+<li>Wireless Connectivity: WiFi and Bluetooth  </li>
+<li>Interfaces: SPI, I2C, UART, PWM, USB  </li>
+<li>Package Type: Compact module  </li>
+<li>Manufacturer: Espressif Systems  </li>
+</ul>
+<hr>
+<h2 id="microcontroller-choice-option-2-esp32-s3-wroom-1-n4">Microcontroller Choice: Option 2 — ESP32-S3-WROOM-1-N4</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Micro2.png" data-desc-position="bottom"><img alt="" src="../Micro2.png"></a></p>
+<p><strong>Rationale</strong></p>
+<p>The ESP32-S3-WROOM-1 module provides a strong balance between performance and ease of development. It offers built-in WiFi and Bluetooth capabilities, making wireless communication possible without additional hardware. The module also supports SPI communication, which simplifies integration with motor drivers and other peripherals. Compared to the smaller ESP32-S3-MINI package, the WROOM module is easier to work with and debug during development.</p>
 
 
 
