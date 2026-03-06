@@ -602,3 +602,79 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 **Rationale**
 
 The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range and adjustable output allow it to convert the battery voltage to the 3.3 V supply needed for the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.
+
+
+# Indicator LEDs
+
+---
+
+*Table 26: LED Option 1*
+
+**Infrared (IR) LED Emitter 940 nm — 0603 Package**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](LED1.png)<br>Infrared LED Emitter 940 nm<br>[link to product](https://www.digikey.com/en/products/detail/kingbright/APT1608F3C/2163696) | * Useful for sensing and communication applications<br>* Very compact 0603 SMT footprint<br>* Low forward voltage and efficient operation | * Not visible to the human eye<br>* Not suitable for status indication<br>* Requires sensor to detect emission |
+
+**Specifications**
+
+- Type: Infrared LED Emitter  
+- Wavelength: 940 nm  
+- Forward Voltage: 1.2 V (typical)  
+- Forward Current: 50 mA max  
+- Radiant Intensity: 1.2 mW/sr @ 20 mA  
+- Viewing Angle: 150°  
+- Mounting Type: Surface Mount  
+- Package: 0603 (1608 Metric)  
+
+---
+
+*Table 27: LED Option 2*
+
+**Green Indicator LED — 0603 Package**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](LED2.png)<br>Green Indicator LED 569 nm<br>[link to product](https://www.digikey.com/en/products/detail/liteon/LTST-C190GKT/269230) | * Highly visible indicator color<br>* Compact SMT footprint ideal for PCB integration<br>* Low power consumption | * Lower brightness than larger LEDs<br>* Small package may be harder to solder manually<br>* Limited viewing distance |
+
+**Specifications**
+
+- Color: Green  
+- Dominant Wavelength: 569 nm  
+- Forward Voltage: 2.1 V (typical)  
+- Test Current: 10 mA  
+- Luminous Intensity: 6 mcd  
+- Viewing Angle: 130°  
+- Mounting Type: Surface Mount  
+- Package: 0603 (1608 Metric)  
+
+---
+
+*Table 28: LED Option 3*
+
+**Red Indicator LED — 2-PLCC Surface Mount**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](LED3.png)<br>Red Indicator LED 625 nm<br>[link to product](https://www.digikey.com/en/products/detail/vishay-semiconductor-opto-division/VLMR334BACB-GS08/4563545) | * Very bright output for clear visibility<br>* Easily recognizable status indicator color<br>* Wide viewing angle | * Larger package footprint<br>* Higher forward current than smaller LEDs<br>* Slightly higher power consumption |
+
+**Specifications**
+
+- Color: Red  
+- Dominant Wavelength: 625 nm  
+- Peak Wavelength: 632 nm  
+- Forward Voltage: 2.2 V (typical)  
+- Test Current: 50 mA  
+- Luminous Intensity: 2200 mcd  
+- Viewing Angle: 120°  
+- Mounting Type: Surface Mount  
+- Package: 2-PLCC (J-Lead)  
+
+---
+
+## Indicator LED Choice: Option 2 — Green Indicator LED (0603 Package)
+ ![](LED2.png)
+
+**Rationale**
+
+The green 0603 LED provides a compact and efficient indicator solution for PCB integration. Its small surface-mount footprint minimizes board space while still providing adequate brightness for status indication. Additionally, the low power consumption and common indicator color make it well suited for visual feedback in the system.
