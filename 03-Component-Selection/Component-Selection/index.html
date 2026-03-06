@@ -1225,7 +1225,8 @@
 
 
 <h2 id="modules-selected-major-components">Module's Selected Major Components</h2>
-<p>The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. </p>
+<p>The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. </p>
+<p>The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. </p>
 <h1 id="3-axis-motion-motors">3-Axis Motion Motors</h1>
 <h2 id="brushless-dc-motor-propeller-for-propulsion">Brushless DC Motor + Propeller for Propulsion</h2>
 <hr>
@@ -1921,8 +1922,8 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../REG1.png" data-desc-position="bottom"><img alt="" src="../REG1.png"></a><br>TPS54202 Buck Switching Regulator<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS54202DDCT/6021967">link to product</a></td>
-<td>* Wide input voltage range<br><em> Adjustable output voltage<br></em> High efficiency switching regulator<br>* Compact SMT package</td>
-<td>* Requires external passive components</td>
+<td>* Wide input voltage range supports a 12 V power supply<br><em> Adjustable output allows generation of the required 3.3 V logic rail<br></em> High efficiency synchronous buck regulator reduces heat and power loss</td>
+<td>* Requires external components such as an inductor and capacitors<br><em> PCB layout must be carefully designed to minimize switching noise<br></em> 2 A current limit may restrict future expansion of peripherals</td>
 </tr>
 </tbody>
 </table>
@@ -1957,8 +1958,8 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../REG2.png" data-desc-position="bottom"><img alt="" src="../REG2.png"></a><br>MP1584 Buck Switching Regulator<br><a href="https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MP1584EN-LF-Z/5291742">link to product</a></td>
-<td>* Higher output current capability<br><em> Adjustable output voltage<br></em> Wide input voltage range</td>
-<td>* Not recommended for new designs<br>* Slightly larger package</td>
+<td>* Higher output current capability (3 A)<br><em> Adjustable output voltage allows flexible power rail design<br></em> Wide switching frequency range enables flexible regulator design</td>
+<td>* Listed as <strong>Not Recommended for New Designs (NRND)</strong><br><em> Requires additional passive components for proper operation<br></em> Larger package size increases PCB footprint</td>
 </tr>
 </tbody>
 </table>
@@ -1993,8 +1994,8 @@
 <tbody>
 <tr>
 <td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../REG3.png" data-desc-position="bottom"><img alt="" src="../REG3.png"></a><br>LM2596 Buck Switching Regulator<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-12-NOPB/363703">link to product</a></td>
-<td>* High current output capability<br><em> Wide input voltage range<br></em> Reliable and widely used regulator</td>
-<td>* Fixed output voltage (12V)<br>* Larger package size</td>
+<td>* High current output capability (3 A)<br><em> Reliable and widely used regulator design<br></em> Wide input voltage range supports many power sources</td>
+<td>* Fixed 12 V output cannot generate the required 3.3 V logic rail<br><em> Larger package compared to modern switching regulators<br></em> Lower switching frequency requires larger external components</td>
 </tr>
 </tbody>
 </table>
@@ -2018,7 +2019,7 @@
 <h2 id="voltage-regulator-choice-option-1-tps54202-adjustable-buck-switching-regulator">Voltage Regulator Choice: Option 1 — TPS54202 Adjustable Buck Switching Regulator</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../REG1.png" data-desc-position="bottom"><img alt="" src="../REG1.png"></a></p>
 <p><strong>Rationale</strong></p>
-<p>The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range and adjustable output allow it to convert the battery voltage to the 3.3 V supply needed for the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.</p>
+<p>The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range allows it to easily regulate a 12 V supply, while the adjustable output enables generation of the 3.3 V rail required by the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.</p>
 <h1 id="indicator-leds">Indicator LEDs</h1>
 <hr>
 <p><em>Table 26: LED Option 1</em></p>
