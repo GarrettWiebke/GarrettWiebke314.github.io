@@ -1,3 +1,13 @@
+---
+title: Module's Selected Major Components
+---
+
+## Module's Selected Major Components
+
+The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. 
+
+
+
 # 3-Axis Motion Motors
 
 ## Brushless DC Motor + Propeller for Propulsion
