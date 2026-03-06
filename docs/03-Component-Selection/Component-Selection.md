@@ -433,6 +433,33 @@ The ESP32-S3-WROOM-1 module provides a strong balance between performance and ea
 
 ---
 
+---
+
+*Table 23: Motor Driver Option 4*
+
+**IFX9201SG Full Bridge Motor Driver** This is the one provided in class
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Driver4.png)<br>IFX9201SG Motor Driver<br>[link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542) | * Designed specifically for 12 V brushed DC motor applications<br>* Simple PWM and direction control interface<br>* Integrated protection features (overcurrent, overtemperature, short circuit) | * Does not support SPI communication<br>* Lower peak current capability than some automotive drivers<br>* Limited configuration and diagnostic feedback |
+
+**Specifications**
+
+- Manufacturer: Infineon Technologies  
+- Motor Type Supported: Brushed DC  
+- Output Configuration: Full H-Bridge  
+- Supply Voltage Range: 6 – 28 V  
+- Peak Output Current: ~6 A  
+- Control Interface: PWM / Direction  
+- Protection Features:  
+  - Overcurrent protection  
+  - Thermal shutdown  
+  - Short circuit protection  
+- Mounting Type: Surface Mount  
+- Package: DSO-14  
+
+---
+
 ## DC Motor Choice: Option 1 — GEARMOTOR 140 RPM 6–24V
 ![](DC1.png)
 
