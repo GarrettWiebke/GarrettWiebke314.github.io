@@ -285,3 +285,68 @@ This LiPo battery is a relatively inexpensive and compact option that provides a
 **Rationale**
 
 The MG995 servo operates within the desired voltage range and is already available for use in the project, effectively reducing cost within the actuation subsystem. While the torque may be somewhat limited for certain steering loads, it remains adequate for the initial design and testing stages. If additional torque becomes necessary, Option 3 (MG90D) can be used as a fallback alternative.
+
+# Microcontroller
+
+---
+
+*Table 14: Microcontroller Option 1*
+
+**PIC18F47K42 Microcontroller**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Micro1.png)<br>PIC18F47K42 Microcontroller<br>$2.79 each<br>[link to product](https://www.digikey.com/en/products/detail/microchip-technology/PIC18F47K42-I-PT/7561733) | * Inexpensive<br>* Easy debugging tools available | * Requires Microchip IDE environment |
+
+**Specifications**
+
+- Microcontroller Family: PIC18  
+- Package Type: Surface Mount  
+- Core: 8-bit MCU  
+- Development Environment: Microchip MPLAB IDE  
+- Manufacturer: Microchip Technology  
+
+---
+
+*Table 15: Microcontroller Option 2*
+
+**ESP32-S3-WROOM-1-N4**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Micro2.png)<br>ESP32-S3-WROOM-1-N4 Module<br>$5.06 each<br>[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-WROOM-1-N4/16162639) | * Easy coding environment<br>* Strong SPI integration<br>* Integrated WiFi and Bluetooth capability | * Slightly more expensive |
+
+**Specifications**
+
+- Processor: Dual-core Xtensa LX7  
+- Wireless Connectivity: WiFi and Bluetooth  
+- Interface Support: SPI, I2C, UART, PWM  
+- Package Type: Module with integrated antenna  
+- Manufacturer: Espressif Systems  
+
+---
+
+*Table 16: Microcontroller Option 3*
+
+**ESP32-S3-MINI-1**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Micro3.png)<br>ESP32-S3-MINI-1 Module<br>$5.28 each<br>[link to product](https://www.digikey.com/en/products/detail/espressif-systems/ESP32-S3-MINI-1U-N8/17728863) | * Extremely small package<br>* Integrated WiFi and Bluetooth<br>* USB support | * Harder to work with due to small form factor |
+
+**Specifications**
+
+- Processor: Dual-core Xtensa LX7  
+- Wireless Connectivity: WiFi and Bluetooth  
+- Interfaces: SPI, I2C, UART, PWM, USB  
+- Package Type: Compact module  
+- Manufacturer: Espressif Systems  
+
+---
+
+## Microcontroller Choice: Option 2 — ESP32-S3-WROOM-1-N4
+![](Micro2.png)
+
+**Rationale**
+
+The ESP32-S3-WROOM-1 module provides a strong balance between performance and ease of development. It offers built-in WiFi and Bluetooth capabilities, making wireless communication possible without additional hardware. The module also supports SPI communication, which simplifies integration with motor drivers and other peripherals. Compared to the smaller ESP32-S3-MINI package, the WROOM module is easier to work with and debug during development.
