@@ -4,7 +4,9 @@ title: Module's Selected Major Components
 
 ## Module's Selected Major Components
 
-The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. 
+The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. 
+
+The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. 
 
 
 
@@ -532,7 +534,7 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](REG1.png)<br>TPS54202 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS54202DDCT/6021967) | * Wide input voltage range<br>* Adjustable output voltage<br>* High efficiency switching regulator<br>* Compact SMT package | * Requires external passive components |
+| ![](REG1.png)<br>TPS54202 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS54202DDCT/6021967) | * Wide input voltage range supports a 12 V power supply<br>* Adjustable output allows generation of the required 3.3 V logic rail<br>* High efficiency synchronous buck regulator reduces heat and power loss | * Requires external components such as an inductor and capacitors<br>* PCB layout must be carefully designed to minimize switching noise<br>* 2 A current limit may restrict future expansion of peripherals |
 
 **Specifications**
 
@@ -559,7 +561,7 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](REG2.png)<br>MP1584 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MP1584EN-LF-Z/5291742) | * Higher output current capability<br>* Adjustable output voltage<br>* Wide input voltage range | * Not recommended for new designs<br>* Slightly larger package |
+| ![](REG2.png)<br>MP1584 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MP1584EN-LF-Z/5291742) | * Higher output current capability (3 A)<br>* Adjustable output voltage allows flexible power rail design<br>* Wide switching frequency range enables flexible regulator design | * Listed as **Not Recommended for New Designs (NRND)**<br>* Requires additional passive components for proper operation<br>* Larger package size increases PCB footprint |
 
 **Specifications**
 
@@ -586,7 +588,7 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](REG3.png)<br>LM2596 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-12-NOPB/363703) | * High current output capability<br>* Wide input voltage range<br>* Reliable and widely used regulator | * Fixed output voltage (12V)<br>* Larger package size |
+| ![](REG3.png)<br>LM2596 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-12-NOPB/363703) | * High current output capability (3 A)<br>* Reliable and widely used regulator design<br>* Wide input voltage range supports many power sources | * Fixed 12 V output cannot generate the required 3.3 V logic rail<br>* Larger package compared to modern switching regulators<br>* Lower switching frequency requires larger external components |
 
 **Specifications**
 
@@ -611,7 +613,7 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 
 **Rationale**
 
-The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range and adjustable output allow it to convert the battery voltage to the 3.3 V supply needed for the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.
+The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range allows it to easily regulate a 12 V supply, while the adjustable output enables generation of the 3.3 V rail required by the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.
 
 
 # Indicator LEDs
