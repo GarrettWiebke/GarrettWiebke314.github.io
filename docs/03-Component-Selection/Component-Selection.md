@@ -427,3 +427,86 @@ The ESP32-S3-WROOM-1 module provides a strong balance between performance and ea
 **Rationale**
 
 This gearmotor provides high torque with a manageable rotational speed, making it well suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.
+
+# SMT Motor Driver
+
+---
+
+*Table 20: Motor Driver Option 1*
+
+**L9958 Motor Driver (STMicroelectronics)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Driver1.png)<br>L9958 Motor Driver IC<br>$8.14 each<br>[link to product](https://www.digikey.com/en/products/detail/stmicroelectronics/L9958/2746837) | * SPI controlled interface<br>* Integrated H-bridge driver<br>* Supports wide motor voltage range | * Slightly limited logic supply voltage |
+
+**Specifications**
+
+- Manufacturer: STMicroelectronics  
+- Motor Type Supported: Brushed DC, Bipolar Stepper  
+- Driver Type: Fully integrated motor driver  
+- Output Configuration: Half Bridge (2)  
+- Interface: SPI  
+- Technology: CMOS  
+- Output Current: 8.6 A  
+- Supply Voltage: 4.5 – 5.5 V  
+- Load Voltage Range: 4 – 28 V  
+- Operating Temperature: -40°C to 150°C  
+- Mounting Type: Surface Mount  
+- Package: PowerSO-20  
+
+---
+
+*Table 21: Motor Driver Option 2*
+
+**DRV8701 Motor Driver (Texas Instruments)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Driver2.png)<br>DRV8701 Motor Driver IC<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/DRV8701PRGET/5299247) | * High voltage support<br>* Flexible current management | * Requires external MOSFET H-bridge<br>* More complex circuit design |
+
+**Specifications**
+
+- Manufacturer: Texas Instruments  
+- Motor Type Supported: Brushed DC  
+- Function: Motor Controller with Current Management  
+- Output Configuration: Pre-driver Half Bridge  
+- Interface: PWM  
+- Technology: Power MOSFET Driver  
+- Supply Voltage: 5.9 – 45 V  
+- Load Voltage: 5.9 – 45 V  
+- Operating Temperature: -40°C to 125°C  
+- Mounting Type: Surface Mount  
+- Package: 24-VQFN  
+
+---
+
+*Table 22: Motor Driver Option 3*
+
+**MC33926 Motor Driver (NXP)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Driver3.png)<br>MC33926 Motor Driver IC<br>[link to product](https://www.nxp.com/products/MC33926) | * SPI communication capability<br>* Easy motor control integration<br>* Low profile design | * Complex package and integration |
+
+**Specifications**
+
+- Manufacturer: NXP Semiconductors  
+- Operating Voltage: 8 – 28 V continuous (5 – 40 V transient)  
+- Maximum RDS(on): 225 mΩ (per MOSFET)  
+- Logic Input Compatibility: 3.0 V and 5.0 V TTL/CMOS  
+- Protection Features:  
+  - Overcurrent limiting  
+  - Short circuit protection  
+  - Thermal protection  
+- Low Power Mode: < 50 µA sleep current  
+- Mounting Type: Surface Mount  
+
+---
+
+## Motor Driver Choice: Option 1 — L9958 Motor Driver
+![](Driver1.png)
+
+**Rationale**
+
+The L9958 motor driver provides a fully integrated motor control solution with an SPI interface, allowing the microcontroller to easily communicate with and control the motor system. The integrated H-bridge simplifies circuit design and reduces the number of additional components required on the PCB. Its wide load voltage range and high current capability also make it well suited for driving the selected DC motor within the system.
