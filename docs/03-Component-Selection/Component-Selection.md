@@ -144,4 +144,74 @@
 ![](BLDC7.png)
 **Rationale**
 
-The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and an integrated propeller and ESC. This significantly simplifies propulsion integration while maintaining efficient power usage. Its corrosion-resistant construction and compatibility with both freshwater and seawater environments make it well suited for the underwater operation required by the system.
+The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and an integrated propeller and ESC. This significantly simplifies propulsion integration while maintaining efficient power usage. Its corrosion-resistant construction and compatibility with both freshwater and seawater environments make it well-suited for the underwater operation required by the system.
+
+# BLDC LiPo Battery
+
+---
+
+*Table 8: BLDC Battery Option 1*
+
+**GForce 30C 2200mAh 3S LiPo Battery (EC3 Connector)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image8.png)<br>GForce 30C 2200mAh 3S LiPo Battery<br>$14.90 each<br>[link to product](https://valuehobby.com/30c-2200mah-3s-ec3.html) | * Relatively inexpensive<br>* Comfortable operating voltage<br>* Compact size | * Short runtime (~20 minutes) |
+
+**Specifications**
+
+- Capacity: 2200 mAh  
+- Voltage: 11.1 V (3S LiPo)  
+- Discharge Rating: 30C  
+- Dimensions: 105 mm × 35 mm × 22 mm  
+- Weight: 174.8 g (6.2 oz)  
+- Connector: EC3  
+- Balance Connector: JST-XH  
+
+---
+
+*Table 9: BLDC Battery Option 2*
+
+**Spektrum Smart G2 2200mAh 3S 30C LiPo Battery**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image9.png)<br>Spektrum Smart G2 2200mAh 3S LiPo Battery<br>$29.99 each<br>[link to product](https://www.spektrumrc.com/product/11.1v-2200mah-3s-30c-smart-g2-lipo-battery-ic3/SPMX223S30.html) | * More efficient battery management<br>* Comfortable operating voltage<br>* Compact design | * Slightly more expensive |
+
+**Specifications**
+
+- Voltage: 11.1 V nominal (12.6 V fully charged)  
+- Capacity: 2200 mAh  
+- Discharge Rating: 30C  
+
+---
+
+*Table 10: BLDC Battery Option 3*
+
+**Admiral 2200mAh 4S 35C LiPo Battery (XT60 Connector)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](image10.png)<br>Admiral 2200mAh 4S LiPo Battery<br>$31.69 each<br>[link to product](https://www.motionrc.com/products/admiral-2200mah-4s-14-8v-35c-lipo-battery-with-xt60-connector-epr22004x6) | * Higher power capability<br>* Slightly longer runtime<br>* Compact form factor | * Relatively expensive |
+
+**Specifications**
+
+- Capacity: 2200 mAh  
+- Voltage: 14.8 V (4S LiPo)  
+- Discharge Rating: 35C  
+- Weight: 228 g  
+- Length: 107 mm  
+- Width: 35 mm  
+- Height: 29 mm  
+- Wire Gauge: 12 AWG  
+- ESC Connector: XT60  
+- Balance Connector: JST-XH  
+- Charge Rate: 3C  
+
+---
+
+## BLDC Battery Choice: Option 1 — GForce 30C 2200mAh 3S LiPo Battery
+
+**Rationale**
+
+This LiPo battery is a relatively inexpensive and compact option that provides a comfortable operating voltage for the thruster system. While the runtime is somewhat limited, it is sufficient for short test operations and prototype development while keeping system cost and physical size low.
