@@ -1322,6 +1322,105 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../Micro2.png" data-desc-position="bottom"><img alt="" src="../Micro2.png"></a></p>
 <p><strong>Rationale</strong></p>
 <p>The ESP32-S3-WROOM-1 module provides a strong balance between performance and ease of development. It offers built-in WiFi and Bluetooth capabilities, making wireless communication possible without additional hardware. The module also supports SPI communication, which simplifies integration with motor drivers and other peripherals. Compared to the smaller ESP32-S3-MINI package, the WROOM module is easier to work with and debug during development.</p>
+<h1 id="regular-dc-motor">Regular DC Motor</h1>
+<hr>
+<p><em>Table 17: DC Motor Option 1</em></p>
+<p><strong>GEARMOTOR 140 RPM 6–24V</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DC1.png" data-desc-position="bottom"><img alt="" src="../DC1.png"></a><br>GEARMOTOR 140 RPM 6–24V<br>$7.12 each<br><a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/15277/9995750">link to product</a></td>
+<td>* High torque output<br><em> Easy to control<br></em> Wide operating voltage range</td>
+<td>* Lower RPM (slower speed)<br>* Larger than some other motor options</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Type: DC Motor  </li>
+<li>Function: Gearmotor  </li>
+<li>Motor Type: Brushed  </li>
+<li>Rated Voltage: 6 – 24 VDC  </li>
+<li>Speed: 140 RPM  </li>
+<li>Rated Torque: 20.83 oz-in (147.1 mNm)  </li>
+<li>Rated Power: 1.6 W  </li>
+<li>Diameter: 22 mm (0.866 in)  </li>
+<li>Shaft Diameter: 6 mm (0.236 in)  </li>
+<li>Shaft Length: 14 mm (0.551 in)  </li>
+<li>Mounting Hole Spacing: 18 mm (0.709 in)  </li>
+<li>Termination Style: Solder Tab  </li>
+</ul>
+<hr>
+<p><em>Table 18: DC Motor Option 2</em></p>
+<p><strong>STANDARD MOTOR 12850 RPM 12V</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DC2.png" data-desc-position="bottom"><img alt="" src="../DC2.png"></a><br>STANDARD MOTOR 12850 RPM 12V<br><a href="https://www.digikey.com/en/products/detail/nmb-technologies-corporation/PAN14EE12AA1/2417070">link to product</a></td>
+<td>* Extremely high rotational speed</td>
+<td>* Easy to stall<br>* Requires significant gear reduction</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Type: DC Motor  </li>
+<li>Function: Standard Motor  </li>
+<li>Motor Type: Brushed  </li>
+<li>Rated Voltage: 12 VDC  </li>
+<li>Speed: 12,850 RPM  </li>
+<li>Rated Torque: 0.694 oz-in (4.9 mNm)  </li>
+<li>Diameter: 24.2 mm (0.953 in)  </li>
+<li>Shaft Diameter: 1.5 mm (0.059 in)  </li>
+<li>Shaft Length: 11.5 mm (0.453 in)  </li>
+<li>Termination Style: Connector  </li>
+</ul>
+<hr>
+<p><em>Table 19: DC Motor Option 3</em></p>
+<p><strong>STANDARD MOTOR 6600 RPM 12V</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DC3.png" data-desc-position="bottom"><img alt="" src="../DC3.png"></a><br>STANDARD MOTOR 6600 RPM 12V<br><a href="https://www.digikey.com/en/products/detail/sparkfun-electronics/11696/6163657">link to product</a></td>
+<td>* Moderate rotational speed</td>
+<td>* Low torque<br>* Harder to control precisely</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Specifications</strong></p>
+<ul>
+<li>Type: DC Motor  </li>
+<li>Function: Standard Motor  </li>
+<li>Rated Voltage: 12 VDC  </li>
+<li>Speed: 6,600 RPM  </li>
+<li>Termination Style: Wire Leads  </li>
+</ul>
+<hr>
+<h2 id="dc-motor-choice-option-1-gearmotor-140-rpm-624v">DC Motor Choice: Option 1 — GEARMOTOR 140 RPM 6–24V</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../DC1.png" data-desc-position="bottom"><img alt="" src="../DC1.png"></a></p>
+<p><strong>Rationale</strong></p>
+<p>This gearmotor provides high torque with a manageable rotational speed, making it well suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.</p>
 
 
 
