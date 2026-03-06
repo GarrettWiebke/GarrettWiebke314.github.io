@@ -211,7 +211,77 @@ The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and a
 ---
 
 ## BLDC Battery Choice: Option 1 — GForce 30C 2200mAh 3S LiPo Battery
+![](LiPO1.png)
 
 **Rationale**
 
 This LiPo battery is a relatively inexpensive and compact option that provides a comfortable operating voltage for the thruster system. While the runtime is somewhat limited, it is sufficient for short test operations and prototype development while keeping system cost and physical size low.
+
+
+# Steering Servo Motors
+
+---
+
+*Table 11: Steering Servo Option 1*
+
+**MG995 55g Metal Gear Servo Motor**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Servo1.png)<br>MG995 Metal Gear Servo Motor<br>$22.43 each<br>[link to product](https://toytooth.com/products/4pcs-mg995-55g-micro-servo-motor-metal-geared-motor-kit-for-rc-car-robot-helicopter-mini-servos-for-arduino-project) | * Inexpensive<br>* Easy to integrate with microcontrollers<br>* Compatible with low-voltage control systems | * Lower torque compared to some alternatives<br>* Can occasionally be unstable |
+
+**Specifications**
+
+- Weight: 55 g  
+- Gear Type: Metal gears  
+- Operating Voltage: Typically 4.8V – 7.2V  
+- Control Method: PWM  
+
+---
+
+*Table 12: Steering Servo Option 2*
+
+**Adafruit High Torque Metal Gear Micro Servo (ID: 2307)**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Servo2.png)<br>Adafruit High Torque Micro Servo<br>$11.95 each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/2307/5154686) | * Reliable torque output<br>* High precision movement<br>* Stable performance | * Relatively expensive for its size<br>* Torque capability may be more than required |
+
+**Specifications**
+
+- Operating Voltage: 6 V DC  
+- Weight: 14.06 g  
+- Gear Type: Metal gears  
+- High torque micro-servo design  
+
+---
+
+*Table 13: Steering Servo Option 3*
+
+**MG90D High Torque Metal Gear Micro Servo**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Servo3.png)<br>MG90D High Torque Micro Servo<br>$9.95 each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1143/5154659) | * High torque output<br>* Comfortable voltage range<br>* Compact low-profile package | * More expensive than some basic servos |
+
+**Specifications**
+
+- Size: 22.8 mm × 12.2 mm × 28.5 mm  
+- Weight: 13.4 g  
+- Operating Voltage: 4.8 – 6 V  
+- Speed:  
+  - 0.10 sec / 60° at 4.8 V  
+  - 0.08 sec / 60° at 6 V  
+- Stall Torque:  
+  - 2.1 kg·cm at 4.8 V  
+  - 2.4 kg·cm at 6 V  
+- Spline Count: 20  
+
+---
+
+## Steering Servo Choice: Option 1 — MG995 Metal Gear Servo Motor
+![](Servo1.png)
+
+**Rationale**
+
+The MG995 servo operates within the desired voltage range and is already available for use in the project, effectively reducing cost within the actuation subsystem. While the torque may be somewhat limited for certain steering loads, it remains adequate for the initial design and testing stages. If additional torque becomes necessary, Option 3 (MG90D) can be used as a fallback alternative.
