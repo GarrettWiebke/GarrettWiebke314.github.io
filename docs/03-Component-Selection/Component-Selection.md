@@ -156,7 +156,7 @@ The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](image8.png)<br>GForce 30C 2200mAh 3S LiPo Battery<br>$14.90 each<br>[link to product](https://valuehobby.com/30c-2200mah-3s-ec3.html) | * Relatively inexpensive<br>* Comfortable operating voltage<br>* Compact size | * Short runtime (~20 minutes) |
+| ![](LiPO1.png)<br>GForce 30C 2200mAh 3S LiPo Battery<br>$14.90 each<br>[link to product](https://valuehobby.com/30c-2200mah-3s-ec3.html) | * Relatively inexpensive<br>* Comfortable operating voltage<br>* Compact size | * Short runtime (~20 minutes) |
 
 **Specifications**
 
@@ -176,7 +176,7 @@ The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](image9.png)<br>Spektrum Smart G2 2200mAh 3S LiPo Battery<br>$29.99 each<br>[link to product](https://www.spektrumrc.com/product/11.1v-2200mah-3s-30c-smart-g2-lipo-battery-ic3/SPMX223S30.html) | * More efficient battery management<br>* Comfortable operating voltage<br>* Compact design | * Slightly more expensive |
+| ![](LiPO2.png)<br>Spektrum Smart G2 2200mAh 3S LiPo Battery<br>$29.99 each<br>[link to product](https://www.spektrumrc.com/product/11.1v-2200mah-3s-30c-smart-g2-lipo-battery-ic3/SPMX223S30.html) | * More efficient battery management<br>* Comfortable operating voltage<br>* Compact design | * Slightly more expensive |
 
 **Specifications**
 
@@ -192,7 +192,7 @@ The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and a
 
 | **Component** | **Pros** | **Cons** |
 |---|---|---|
-| ![](image10.png)<br>Admiral 2200mAh 4S LiPo Battery<br>$31.69 each<br>[link to product](https://www.motionrc.com/products/admiral-2200mah-4s-14-8v-35c-lipo-battery-with-xt60-connector-epr22004x6) | * Higher power capability<br>* Slightly longer runtime<br>* Compact form factor | * Relatively expensive |
+| ![](LiPO3.png)<br>Admiral 2200mAh 4S LiPo Battery<br>$31.69 each<br>[link to product](https://www.motionrc.com/products/admiral-2200mah-4s-14-8v-35c-lipo-battery-with-xt60-connector-epr22004x6) | * Higher power capability<br>* Slightly longer runtime<br>* Compact form factor | * Relatively expensive |
 
 **Specifications**
 
