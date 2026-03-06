@@ -510,3 +510,95 @@ This gearmotor provides high torque with a manageable rotational speed, making i
 **Rationale**
 
 The L9958 motor driver provides a fully integrated motor control solution with an SPI interface, allowing the microcontroller to easily communicate with and control the motor system. The integrated H-bridge simplifies circuit design and reduces the number of additional components required on the PCB. Its wide load voltage range and high current capability also make it well suited for driving the selected DC motor within the system.
+
+
+# Voltage Regulator
+
+---
+
+*Table 23: Voltage Regulator Option 1*
+
+**TPS54202 Adjustable Buck Switching Regulator**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](REG1.png)<br>TPS54202 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/TPS54202DDCT/6021967) | * Wide input voltage range<br>* Adjustable output voltage<br>* High efficiency switching regulator<br>* Compact SMT package | * Requires external passive components |
+
+**Specifications**
+
+- Manufacturer: Texas Instruments  
+- Function: Step-down (Buck) Regulator  
+- Output Configuration: Positive  
+- Topology: Buck  
+- Output Type: Adjustable  
+- Number of Outputs: 1  
+- Input Voltage Range: 4.5 – 28 V  
+- Output Voltage Range: 0.596 – 28 V  
+- Output Current: 2 A  
+- Switching Frequency: 500 kHz  
+- Synchronous Rectifier: Yes  
+- Operating Temperature: -40°C to 125°C  
+- Mounting Type: Surface Mount  
+- Package: SOT-23-6 Thin (TSOT-23-6)  
+
+---
+
+*Table 24: Voltage Regulator Option 2*
+
+**MP1584 Adjustable Buck Switching Regulator**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](REG2.png)<br>MP1584 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/monolithic-power-systems-inc/MP1584EN-LF-Z/5291742) | * Higher output current capability<br>* Adjustable output voltage<br>* Wide input voltage range | * Not recommended for new designs<br>* Slightly larger package |
+
+**Specifications**
+
+- Manufacturer: Monolithic Power Systems  
+- Function: Step-down (Buck) Regulator  
+- Output Configuration: Positive  
+- Topology: Buck  
+- Output Type: Adjustable  
+- Number of Outputs: 1  
+- Input Voltage Range: 4.5 – 28 V  
+- Output Voltage Range: 0.8 – 25 V  
+- Output Current: 3 A  
+- Switching Frequency: 100 kHz – 1.5 MHz  
+- Synchronous Rectifier: No  
+- Operating Temperature: -20°C to 85°C  
+- Mounting Type: Surface Mount  
+- Package: 8-SOIC (Exposed Pad)  
+
+---
+
+*Table 25: Voltage Regulator Option 3*
+
+**LM2596 Fixed 12V Buck Switching Regulator**
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](REG3.png)<br>LM2596 Buck Switching Regulator<br>[link to product](https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-12-NOPB/363703) | * High current output capability<br>* Wide input voltage range<br>* Reliable and widely used regulator | * Fixed output voltage (12V)<br>* Larger package size |
+
+**Specifications**
+
+- Manufacturer: Texas Instruments  
+- Function: Step-down (Buck) Regulator  
+- Output Configuration: Positive  
+- Topology: Buck  
+- Output Type: Fixed  
+- Number of Outputs: 1  
+- Input Voltage Range: 4.5 – 40 V  
+- Output Voltage: 12 V  
+- Output Current: 3 A  
+- Switching Frequency: 150 kHz  
+- Operating Temperature: -40°C to 125°C  
+- Mounting Type: Surface Mount  
+- Package: TO-263 (D2PAK)  
+
+---
+
+## Voltage Regulator Choice: Option 1 — TPS54202 Adjustable Buck Switching Regulator
+![](REG1.png)
+
+**Rationale**
+
+The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range and adjustable output allow it to convert the battery voltage to the 3.3 V supply needed for the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.
