@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#section-a-major-component-maximum-current-consumption" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -823,6 +828,59 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#section-a-major-component-maximum-current-consumption" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section A — Major Component Maximum Current Consumption
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-b-power-rail-current-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section B — Power Rail Current Budget
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-c-33v-voltage-regulator-selection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section C — 3.3V Voltage Regulator Selection
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-d-external-power-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section D — External Power Source
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-e-battery-life-calculation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section E — Battery Life Calculation
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -846,7 +904,132 @@
 
   <h1>Index</h1>
 
-
+<h3 id="section-a-major-component-maximum-current-consumption">Section A — Major Component Maximum Current Consumption</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Component</strong></th>
+<th style="text-align: left;"><strong>Function</strong></th>
+<th style="text-align: left;"><strong>Operating Voltage</strong></th>
+<th style="text-align: left;"><strong>Absolute Max Current</strong></th>
+<th style="text-align: left;"><strong>Source (Datasheet)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ESP32-S3-WROOM Microcontroller</td>
+<td style="text-align: left;">Main system controller, SPI master</td>
+<td style="text-align: left;">3.3 V</td>
+<td style="text-align: left;">500 mA</td>
+<td style="text-align: left;">Espressif ESP32-S3 Datasheet</td>
+</tr>
+<tr>
+<td style="text-align: left;">L9958 Motor Driver</td>
+<td style="text-align: left;">Controls direction and speed of DC motor</td>
+<td style="text-align: left;">12 V</td>
+<td style="text-align: left;">20 mA (logic consumption)</td>
+<td style="text-align: left;">ST L9958 Datasheet</td>
+</tr>
+<tr>
+<td style="text-align: left;">SparkFun 140 RPM Gearmotor</td>
+<td style="text-align: left;">Propulsion actuator</td>
+<td style="text-align: left;">12 V</td>
+<td style="text-align: left;">3 A (stall current estimate)</td>
+<td style="text-align: left;">SparkFun Motor Documentation</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-b-power-rail-current-budget">Section B — Power Rail Current Budget</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Power Rail</strong></th>
+<th style="text-align: left;"><strong>Components on Rail</strong></th>
+<th style="text-align: left;"><strong>Max Current (A)</strong></th>
+<th style="text-align: left;"><strong>Current with 25% Margin (A)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">3.3 V Logic Rail</td>
+<td style="text-align: left;">ESP32-S3-WROOM</td>
+<td style="text-align: left;">0.50 A</td>
+<td style="text-align: left;">0.63 A</td>
+</tr>
+<tr>
+<td style="text-align: left;">12 V Motor Rail</td>
+<td style="text-align: left;">DC Gearmotor + L9958 Driver</td>
+<td style="text-align: left;">3.02 A</td>
+<td style="text-align: left;">3.78 A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-c-33v-voltage-regulator-selection">Section C — 3.3V Voltage Regulator Selection</h3>
+<p><em>Table: Voltage Regulator Option 1</em></p>
+<p><strong>TPS54202 Buck Switching Regulator</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TPS54202 Adjustable Buck Regulator<br><a href="https://www.digikey.com/en/products/detail/texas-instruments/TPS54202DDCT/6021967">DigiKey Link</a></td>
+<td>* High efficiency switching regulator<br><em> Wide input voltage range supports 12V supply<br></em> Adjustable output allows precise 3.3V regulation</td>
+<td>* Requires external inductor and capacitors<br>* Slightly more complex PCB layout</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<p><em>Table: Voltage Regulator Option 2</em></p>
+<p><strong>AMS1117-3.3 Linear Regulator</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Component</strong></th>
+<th><strong>Pros</strong></th>
+<th><strong>Cons</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AMS1117-3.3 Linear Regulator<br><a href="https://www.digikey.com/en/products/detail/advanced-monolithic-systems-inc/AMS1117-3-3/116507">DigiKey Link</a></td>
+<td>* Very simple circuit design<br><em> Requires minimal external components<br></em> Low cost and widely available</td>
+<td>* Poor efficiency when stepping down from 12V<br>* Generates significant heat at higher currents</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-d-external-power-source">Section D — External Power Source</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Power Source</strong></th>
+<th style="text-align: left;"><strong>Output Voltage</strong></th>
+<th style="text-align: left;"><strong>Maximum Current</strong></th>
+<th style="text-align: left;"><strong>Current Required by System</strong></th>
+<th style="text-align: left;"><strong>Remaining Current Available</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Regulated Wall Power Supply</td>
+<td style="text-align: left;">12 V</td>
+<td style="text-align: left;">5.0 A</td>
+<td style="text-align: left;">3.78 A</td>
+<td style="text-align: left;">1.22 A</td>
+</tr>
+</tbody>
+</table>
+<h3 id="section-e-battery-life-calculation">Section E — Battery Life Calculation</h3>
+<p>This system uses a regulated 12V wall power supply instead of a battery.<br>
+Therefore, battery life calculations are not applicable for this design.</p>
+<p>3.3V rail current: 0.63A
+12V rail current: 3.78A
+External supply capacity: 5A</p>
+<p>Remaining margin: ~1.22A</p>
 
 
 
