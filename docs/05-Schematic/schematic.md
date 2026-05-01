@@ -15,7 +15,7 @@ The ESP has 3 LEDS connected to GPIO pins to indicate the motors levels of speed
 PIN 2 is shared UART and PIN 8 is shared ground on the team's 8-pin connector. 
 
 
-![schematic](){style width:"350" height:"300;"}
+![schematic](schematic314gw.png){style width:"350" height:"300;"}
 
 
 ## Resouces
