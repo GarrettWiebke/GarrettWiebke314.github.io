@@ -31,7 +31,7 @@ The bottom layer of copper is connected to ground
 <img width="2160" height="2880" alt="image" src="https://github.com/user-attachments/assets/8078b143-05b4-48dd-b9f4-7fdee969de76" />
 
 # Populated PCB 
-
+[](IMG_4105.jpg)
 
 
 
