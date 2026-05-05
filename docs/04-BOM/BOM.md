@@ -84,3 +84,6 @@ Therefore, battery life calculations are not applicable for this design.
 External supply capacity: 5A
 
 Remaining margin: ~1.22A
+
+## Conclusions derived from power budget.
+Origninally the actuation subsystem was to be used for shared power, since the power supply had the most capabilty due to the large power consumption of the system but through calculating and organizing the actuation modules power consumption we quickly learned that the subsystem needed to be fed its own power supply and would not have sufficient current remaining for the rest of the team. The use of the power budget allowed the team to pivot to another subsystem to be the shared power hub before testing and learning the hard way. 
