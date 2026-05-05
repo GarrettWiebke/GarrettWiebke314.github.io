@@ -1,0 +1,36 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet,,
+"C1,C7",2,10uF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,https://www.digikey.com/en/products/detail/taiyo-yuden/EMK212BJ106KG-T/930647
+"C2,C3",2,0.1uF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,https://www.digikey.com/en/products/detail/yageo/CC0805KRX7R7BB104/302876
+C4,1,22uF,,,,1206 Capacitors:CAP_TMK316BBJ226ML-T_TAY-L,~,Done,https://www.digikey.com/en/products/detail/taiyo-yuden/EMK316BB7226ML-T/5361244
+C5,1,47uF,,,,1206 Capacitors:CAP_TMK316BBJ226ML-T_TAY-L,~,Done,https://www.digikey.com/en/products/detail/taiyo-yuden/MSASE31LBB5476MTNA01/16666169
+C6,1,75pF,,,,1206 Capacitors:CAP_TMK316BBJ226ML-T_TAY-L,~,Done,https://www.digikey.com/en/products/detail/kemet/C1206C100F4HACAUTO/7960096
+"C8,C15",2,1uF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,https://www.digikey.com/en/products/detail/yageo/CC0805KKX7R7BB105/2103103
+C9,1,0.1uF,,,,1206 Capacitors:CAP_TMK316BBJ226ML-T_TAY-L,~,Done,https://www.digikey.com/en/products/detail/yageo/CC1206KRX7R7BB104/5884621
+C10,1,22uF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,https://www.digikey.com/en/products/detail/murata-electronics/GRM219R61C226ME15L/4905420
+C11,1,10nF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,https://www.digikey.com/en/products/detail/kemet/C0805C103K4RECTU/8643796
+"C12,C14,C16",3,100nF,,,,0805 Capacitors:CAP_X7R_0805_AVX-L,~,Done,Will use 10nF
+C13,1,100uF,,,,1206 Capacitors:CAP_TMK316BBJ226ML-T_TAY-L,~,Done,Will use 47uF
+"connector_GW1,connector_GW2",2,~,,,,8PINCONS:CONN_7024608xx_MOL,,,Get from class on Monday 
+"D1,D2",2,D_Schottky,,,,Schottkey Diode 0805:SD0805_AVX,~,Done,https://www.digikey.com/en/products/detail/kyocera-avx/SD0805S040S0R1/3749488
+"D3,D4,D5",3,LED,,,,SMT LED:LED_LTST-C190_LTO-L,~,Done,https://www.digikey.com/en/products/detail/liteon/LTST-C190KDKT-10A/17879239
+F1,1,1A,,,,Fuse holda:FUSE_4527_KEY,~,Done,https://www.digikey.com/en/products/detail/keystone-electronics/4527/8397
+FB1,1,FerriteBead,,,,Ferrite bead 0805:IND_BLM21_MUR-L,~,Done,https://www.digikey.com/en/products/detail/murata-electronics/BLM18EG121SN1D/1016150?s=N4IgTCBcDaIEIBkCyBGAHAUQOIrCgygHIoAiIAugL5A
+J1,1,Barrel_Jack_Switch,,,,Connector_BarrelJack:BarrelJack_CUI_PJ-102AH_Horizontal,~,Done ,https://www.digikey.com/en/products/detail/same-sky-formerly-cui-devices/PJ-102AH/408448
+L1,1,10uH,,,,Inductor 0805:IND_LSQB_A201212_TAY-L,~,Done ,https://www.digikey.com/en/products/detail/taiyo-yuden/LSQEA201212T100K/16660790
+M1,1,Motor_DC,,,,stuff:Motor,~,,
+R1,1,511k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done ,https://www.digikey.com/en/products/detail/stackpole-electronics-inc/RNCF0805BTE500K/6240086
+R2,1,105k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done ,https://www.digikey.com/en/products/detail/vishay-dale/CRCW0805105KFKEA/1175867
+R3,1,41.2k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done,https://www.digikey.com/en/products/detail/vishay-dale/CRCW080541K2FKEA/117582
+"R4,R7",2,100k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done,https://www.digikey.com/en/products/detail/vishay-dale/CRCW0805100KFKEA/1175865
+R5,1,13.3k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done ,https://www.digikey.com/en/products/detail/vishay-dale/CRCW080513K3FKEA/1175764
+R6,1,18k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done,https://www.digikey.com/en/products/detail/yageo/RC0805FR-0718K2L/727646
+"R8,R9,R15",3,10k,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done,https://www.digikey.com/en/products/detail/vishay-dale/CRCW080510K0FKEA/1175751
+"R10,R11",2,22,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done ,https://www.digikey.com/en/products/detail/vishay-dale/CRCW080522R
+"R12,R13,R14",3,300,,,,0805 Resistors:RES_CRCW_0805_VIS-L,~,Done,https://www.digikey.com/en/products/detail/vishay-dale/CRCW0805300RFKEA/1175575
+"SW1,SW2,SW3",3,SW_Push,,,,stuff:SMT pushbutton,~,,Get from class on Monday 
+"TestPin_GW1,TestPin_GW2,TestPin_GW3,TestPin_GW8,TestPin_GW9,TestPin_GW10,TestPin_GW11",7,~,,,,ha:TESTPIN_GW,,,
+U1,1,~,,,,Updated TPS:SOT95P280X110-6N,,,
+U2,1,~,,,,ESP32-WROOM-N4-1:XCVR_ESP32-S3-WROOM-1-N4,,,
+U3,1,~,,,,L9958:POWERSO16_STM-L,,,
+U4,1,~,,,,USBCON:CONN_USB3131-30-0230-A_GCT,,,
+U5,1,~,,,,ha:Extra Headers,,,Get from class on Monday 
