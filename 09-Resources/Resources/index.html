@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#resouces" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -930,6 +935,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Module Resources
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -939,6 +955,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#resouces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resouces
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1072,6 +1114,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#resouces" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resouces
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1095,7 +1154,15 @@
 
   <h1>Module Resources</h1>
 
-
+<h2 id="resouces">Resouces</h2>
+<p>ESP32 Python code ran in Thonny. Used to make the motor react to certain UART messages received from other teammates' subsystems.
+Functionality includes:
+- The ability for the motor to go full speed, slow, or stop using PWM when receiving a sensor value from JT's sensor value
+- The ability to change directions based on an HMI button press message from Abriana's subsystem
+- Sending the current motor status to Don's hall effect subsystem
+- Able to pass along messages not meant for my ID designation and parse messages that do not belong to any of the team's IDs
+- 
+The Python code is available for download in a zip file <a href="../314finalcode.zip"><em>here</em></a></p>
 
 
 
