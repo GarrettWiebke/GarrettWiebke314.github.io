@@ -597,6 +597,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-making-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision-Making Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#actuation-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Actuation Block Diagram
@@ -943,6 +952,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#decision-making-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Decision-Making Process
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#actuation-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       Actuation Block Diagram
@@ -977,8 +995,8 @@
   <h1>Actuation Module's Block Diagram</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This is the Actuation block diagram for Team 307 made by Garrett Wiebke.
-The features include:</p>
+<p>This is the Actuation block diagram for Team 307 made by Garrett Wiebke.</p>
+<p>The features include:</p>
 <ul>
 <li>SMT ESP32 controlling subsystem</li>
 <li>Motor driver using SPI communication between it and the ESP32</li>
@@ -986,10 +1004,11 @@ The features include:</p>
 <li>12V High-Power DC Propulsion Motor </li>
 <li>12V 5A AC-DC wall power supply</li>
 <li>Communication via other modules via UART </li>
-<li>Display OLED </li>
-<li>Indicator LEDS</li>
+<li>Indicator LEDS (Green, Yellow, Red)</li>
 <li>Robust upstream/downstream 8-pin headers with shared power and ground</li>
 </ul>
+<h2 id="decision-making-process">Decision-Making Process</h2>
+<p>Team 307's autonomous submersible exploration device needed a means of actuation. This system fits the team's requirements of having an SPI motor driver communicating with an ESP to control a motor with a propeller on its shaft. This system is able to communicate with other teammates' subsystems via UART through the use of robust upstream and downstream 8-pin headers traced to the ESP's RX and TX pins, with the additional features of shared power and ground for ease of connection. The block diagram below only uses pins on the ESP32-WROOM-S3-1 as well as the SPI motor driver, and leaves out unconnected pins or pins not used for SPI communication.</p>
 <h2 id="actuation-block-diagram">Actuation Block Diagram</h2>
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../UpdatedIndividual.drawio.png" data-desc-position="bottom"><img alt="Team 307 Actuation Block Diagram" src="../UpdatedIndividual.drawio.png"></a></p>
 
