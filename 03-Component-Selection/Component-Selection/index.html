@@ -738,6 +738,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#final-selected-major-components-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Selected Major Components Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pinout-table-motor-driver-leds-esp32" class="md-nav__link">
     <span class="md-ellipsis">
       Pinout table (Motor driver, LEDS, ESP32)
@@ -774,15 +783,6 @@
   <a href="#wiring-notes" class="md-nav__link">
     <span class="md-ellipsis">
       Wiring Notes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#final-selected-major-components-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final Selected Major Components Summary
     </span>
   </a>
   
@@ -1152,6 +1152,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#final-selected-major-components-summary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final Selected Major Components Summary
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#pinout-table-motor-driver-leds-esp32" class="md-nav__link">
     <span class="md-ellipsis">
       Pinout table (Motor driver, LEDS, ESP32)
@@ -1188,15 +1197,6 @@
   <a href="#wiring-notes" class="md-nav__link">
     <span class="md-ellipsis">
       Wiring Notes
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#final-selected-major-components-summary" class="md-nav__link">
-    <span class="md-ellipsis">
-      Final Selected Major Components Summary
     </span>
   </a>
   
@@ -1768,6 +1768,51 @@
 <p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../LED2.png" data-desc-position="bottom"><img alt="" src="../LED2.png"></a></p>
 <p><strong>Rationale</strong></p>
 <p>The green 0603 LED provides a compact and efficient indicator solution for PCB integration. Its small surface-mount footprint minimizes board space while still providing adequate brightness for status indication. Additionally, the low power consumption and common indicator color make it well-suited for visual feedback in the system.</p>
+<h2 id="final-selected-major-components-summary">Final Selected Major Components Summary</h2>
+<p>The following table summarizes the final major components selected for the actuation module design. Only major active components and electromechanical devices are included.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Subsystem</strong></th>
+<th><strong>Selected Component</strong></th>
+<th><strong>Primary Function</strong></th>
+<th><strong>Final Selection Reason</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microcontroller</td>
+<td>ESP32-S3-WROOM-1-N4</td>
+<td>Main system controller, SPI communication, PWM generation, wireless capability</td>
+<td>Easy development environment, integrated WiFi/Bluetooth, strong peripheral support</td>
+</tr>
+<tr>
+<td>DC Motor</td>
+<td>GEARMOTOR 140 RPM 6–24V</td>
+<td>Mechanical propulsion / actuation output</td>
+<td>High torque, controllable speed, compatible voltage range</td>
+</tr>
+<tr>
+<td>Motor Driver</td>
+<td>L9958 Motor Driver</td>
+<td>Brushed DC motor driving and SPI motor control</td>
+<td>Integrated H-bridge, SPI diagnostics/control, reduced external circuitry</td>
+</tr>
+<tr>
+<td>Voltage Regulator</td>
+<td>TPS54202 Adjustable Buck Regulator</td>
+<td>Steps system voltage down to 3.3 V logic rail</td>
+<td>High efficiency, adjustable output, compact SMT footprint</td>
+</tr>
+<tr>
+<td>Indicator LEDs</td>
+<td>Green Indicator LED (0603 Package) + Red/Yellow/Green Status LEDs</td>
+<td>Visual system state indication (stopped, 50% speed, full speed, fault/status)</td>
+<td>Compact SMT package, low power, simple visual feedback</td>
+</tr>
+</tbody>
+</table>
+<hr>
 <h2 id="pinout-table-motor-driver-leds-esp32">Pinout table (Motor driver, LEDS, ESP32)</h2>
 <h1 id="l9958-motor-driver-pinout">L9958 Motor Driver Pinout</h1>
 <table>
@@ -1885,51 +1930,6 @@
 <li>Add current-limiting resistors (~220Ω–330Ω) in series with each LED.</li>
 <li>OUT1 and OUT2 connect directly to the DC motor terminals.</li>
 </ul>
-<h2 id="final-selected-major-components-summary">Final Selected Major Components Summary</h2>
-<p>The following table summarizes the final major components selected for the actuation module design. Only major active components and electromechanical devices are included.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Subsystem</strong></th>
-<th><strong>Selected Component</strong></th>
-<th><strong>Primary Function</strong></th>
-<th><strong>Final Selection Reason</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Microcontroller</td>
-<td>ESP32-S3-WROOM-1-N4</td>
-<td>Main system controller, SPI communication, PWM generation, wireless capability</td>
-<td>Easy development environment, integrated WiFi/Bluetooth, strong peripheral support</td>
-</tr>
-<tr>
-<td>DC Motor</td>
-<td>GEARMOTOR 140 RPM 6–24V</td>
-<td>Mechanical propulsion / actuation output</td>
-<td>High torque, controllable speed, compatible voltage range</td>
-</tr>
-<tr>
-<td>Motor Driver</td>
-<td>L9958 Motor Driver</td>
-<td>Brushed DC motor driving and SPI motor control</td>
-<td>Integrated H-bridge, SPI diagnostics/control, reduced external circuitry</td>
-</tr>
-<tr>
-<td>Voltage Regulator</td>
-<td>TPS54202 Adjustable Buck Regulator</td>
-<td>Steps system voltage down to 3.3 V logic rail</td>
-<td>High efficiency, adjustable output, compact SMT footprint</td>
-</tr>
-<tr>
-<td>Indicator LEDs</td>
-<td>Green Indicator LED (0603 Package) + Red/Yellow/Green Status LEDs</td>
-<td>Visual system state indication (stopped, 50% speed, full speed, fault/status)</td>
-<td>Compact SMT package, low power, simple visual feedback</td>
-</tr>
-</tbody>
-</table>
-<hr>
 
 
 
