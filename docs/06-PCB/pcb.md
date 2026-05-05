@@ -15,20 +15,20 @@ The bottom layer of copper is connected to ground
 ## PCB
 <img width="867" height="868" alt="image" src="https://github.com/user-attachments/assets/a356023b-80f4-4a36-8c08-11ee3c10cb74" />
 
-PCB 3D Front View
+# PCB 3D Front View
 <img width="1068" height="602" alt="PCB3dFrontView" src="https://github.com/user-attachments/assets/35dc2f36-a36d-4f74-aef3-99d1f418867e" />
 
-PCB 3D Back View 
+# PCB 3D Back View 
 <img width="1068" height="602" alt="PCB3dBackView" src="https://github.com/user-attachments/assets/436259d7-f2a1-48bc-8602-acd27484782f" />
 
-PCB Top Copper Layer 
+# PCB Top Copper Layer 
 <img width="876" height="878" alt="PCBfrontcopper" src="https://github.com/user-attachments/assets/5b02be11-43fb-4f31-b0d3-5dcce4f7058c" />
 
-PCB Bottom Copper Layer 
+# PCB Bottom Copper Layer 
 <img width="876" height="877" alt="PCBbackcopper" src="https://github.com/user-attachments/assets/60378aba-99e6-4888-9179-d128840783fb" />
 
 ---
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](schematic314.pdf), and the Zip folder of the project [*here*](schematic314.zip).
+The PCB zip file download is available [*here*](314 Final updates.zip)
