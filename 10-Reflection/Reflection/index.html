@@ -89,6 +89,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#review-of-modules-success" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -976,6 +981,17 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Reflection
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -985,6 +1001,59 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#review-of-modules-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review of Module's Success
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-start-up-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module start-up tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1072,6 +1141,50 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+      
+        <li class="md-nav__item">
+  <a href="#review-of-modules-success" class="md-nav__link">
+    <span class="md-ellipsis">
+      Review of Module's Success
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#module-start-up-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      Module start-up tips
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lessons-learned" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lessons Learned
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recommendations-for-future-students" class="md-nav__link">
+    <span class="md-ellipsis">
+      Recommendations for Future Students
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1095,7 +1208,38 @@
 
   <h1>Reflection</h1>
 
-
+<h2 id="review-of-modules-success">Review of Module's Success</h2>
+<p>EGR 314 Embedded Systems Design 2 is an extremely difficult yet rewarding course that you learn greatly from; unfortunately, failure is one of the most common mediums for learning in this course. Here's what I did successfully and what I did not do so successfully. The module supported surface mount ESP32 startup and boot loader instantly with no issues and had full capability of its buttons, and LED uses for testing and debugging, which were all surface mount components. The power regulators' EN pin was tied to ground and, therefore, was never actually switching. The pin needed to be bent upwards so it wasn't touching the pad, and cut into a trace between the resistance divider. There was also a current draw issue with the motor driver, which led to a daughter board being needed for another component, and the connections tied to the headers I had on the PCB. </p>
+<h2 id="module-start-up-tips">Module start-up tips</h2>
+<ol>
+<li>Only solder specific sections based on function first and test profusely before moving on, for example, first would be your power regulator, then your ESP, and so on. Do not solder everything at once and expect it to work.</li>
+<li>After soldering any component, do a continuity test with a multimeter to make sure your connections are good and that there is no bridging that could short or fry any of your components.</li>
+<li>Make sure you have the necessary BOOT and EN buttons tied to the correct pins for the ESP32</li>
+<li>Make headers as much as you can, ideally every unconnected pin should be a header for robust functionality</li>
+<li>Make sure 3v3 and ground aren't bridged in any capacity, the pins are right next to each other, and it is easy to do so. We've lost a lot of ESPs due to that issue </li>
+</ol>
+<h2 id="lessons-learned">Lessons Learned</h2>
+<ol>
+<li>Go through the datasheet more than once and match it to your schematic many times to ensure you have the correct connections</li>
+<li>Make as many headers as you can, as they can save your entire design.</li>
+<li>The microcontroller is the brain of your whole subsystem and is the most important thing to care for and to get working</li>
+<li>ESD protection is no joke for the ESP32. Make sure you have filtering capacitors, and be careful with your PCB itself.</li>
+<li>You can do a surprising number of things to fix a PCB, although it might not be the prettiest. Never give up because nine times out of ten, an issue can be fixed relatively easily on a PCB</li>
+<li>Every time you make a change to your subsystem, go over the other parts and make sure it will not conflict with them</li>
+<li>Team communication is everything; help your team and work with them.</li>
+<li>Adjustable power regulators require a fair bit more setup than fixed power regulators</li>
+<li>For your first iteration of a design, the simpler the better, then build upon that when you confirm it's working</li>
+<li>Work with the teaching team and use the resources available to you to their fullest extent </li>
+</ol>
+<h2 id="recommendations-for-future-students">Recommendations for Future Students</h2>
+<ol>
+<li>Please make sure you triple, no quadruple check datasheets. At first, they look complicated, but they are not that hard to read once you get used to them.</li>
+<li>Work with your team and the teaching team every step of the way and get feedback on everything, components used, schematic connects, etc.</li>
+<li>Favor simplicity over complexity. This is your first surface-mount PCB, and even things that seem simple can be more than you expect.</li>
+<li>Invest in your own soldering station with surface mount and through-hole capability, and please get good paste and flux, it'll make your connections so much better</li>
+<li>Devote a large amount of time to this class, but try to make it fun, it's one of the most interesting projects I've had, and you learn so much from it</li>
+<li>NEVER GIVE UP!!!!</li>
+</ol>
 
 
 
