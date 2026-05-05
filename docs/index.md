@@ -37,6 +37,15 @@ To review the details listed of the material and the costs used to construct the
 
 To review the electrical design schematic used for the actuation subsystem, you can review it in the ["Schematic"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/05-Schematic/schematic/) section of the datasheet.
 
+To review the PCB design and manufacturing for the actuation subsystem, you can review it in the ["PCB"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/06-PCB/pcb/) section of the datasheet.
+
+To review the API messaging structure for the actuation subsystem, you can review it in the ["API"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/07-API/api/) section of the datasheet.
+
+To review what I would improve upon next time for the actuation subsystem, you can review it in the ["Hardware V2.0"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/08-Hardware%20V2.0./HardwareV2/) section of the datasheet.
+
+To review the available resources from the actuation subsystem, such as the Python code, you can review it in the ["Resources"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/09-Resources/Resources/) section of the datasheet.
+
+To review the reflection from this entire project as well as tips for future students, you can review it in the ["Reflection"](https://garrettwiebke.github.io/GarrettWiebke314.github.io/10-Reflection/Reflection/) section of the datasheet.
 
 ### Team 307 Project Website 
 [team report.](https://egr-314-team-307-spring-2026.github.io/Team307.github.io/)
