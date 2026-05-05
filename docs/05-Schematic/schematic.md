@@ -20,4 +20,4 @@ PIN 2 is the shared UART, and PIN 8 is the shared ground on the team's 8-pin con
 
 ## Resouces
 
-The schematic as a PDF download is available [*here*](schematic314.pdf), and the Zip folder of the project [*here*](dummyZip.zip).
+The schematic as a PDF download is available [*here*](schematic314.pdf), and the Zip folder of the project [*here*](schematic314.zip).
