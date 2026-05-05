@@ -427,6 +427,19 @@ The TPS54202 switching regulator provides an efficient and compact solution for 
 
 The green 0603 LED provides a compact and efficient indicator solution for PCB integration. Its small surface-mount footprint minimizes board space while still providing adequate brightness for status indication. Additionally, the low power consumption and common indicator color make it well-suited for visual feedback in the system.
 
+## Final Selected Major Components Summary
+
+The following table summarizes the final major components selected for the actuation module design. Only major active components and electromechanical devices are included.
+
+| **Subsystem** | **Selected Component** | **Primary Function** | **Final Selection Reason** |
+|---|---|---|---|
+| Microcontroller | ESP32-S3-WROOM-1-N4 | Main system controller, SPI communication, PWM generation, wireless capability | Easy development environment, integrated WiFi/Bluetooth, strong peripheral support |
+| DC Motor | GEARMOTOR 140 RPM 6–24V | Mechanical propulsion / actuation output | High torque, controllable speed, compatible voltage range |
+| Motor Driver | L9958 Motor Driver | Brushed DC motor driving and SPI motor control | Integrated H-bridge, SPI diagnostics/control, reduced external circuitry |
+| Voltage Regulator | TPS54202 Adjustable Buck Regulator | Steps system voltage down to 3.3 V logic rail | High efficiency, adjustable output, compact SMT footprint |
+| Indicator LEDs | Green Indicator LED (0603 Package) + Red/Yellow/Green Status LEDs | Visual system state indication (stopped, 50% speed, full speed, fault/status) | Compact SMT package, low power, simple visual feedback |
+
+---
 
 ## Pinout table (Motor driver, LEDS, ESP32)
 
@@ -464,16 +477,3 @@ The green 0603 LED provides a compact and efficient indicator solution for PCB i
 - Add current-limiting resistors (~220Ω–330Ω) in series with each LED.
 - OUT1 and OUT2 connect directly to the DC motor terminals.
 
-## Final Selected Major Components Summary
-
-The following table summarizes the final major components selected for the actuation module design. Only major active components and electromechanical devices are included.
-
-| **Subsystem** | **Selected Component** | **Primary Function** | **Final Selection Reason** |
-|---|---|---|---|
-| Microcontroller | ESP32-S3-WROOM-1-N4 | Main system controller, SPI communication, PWM generation, wireless capability | Easy development environment, integrated WiFi/Bluetooth, strong peripheral support |
-| DC Motor | GEARMOTOR 140 RPM 6–24V | Mechanical propulsion / actuation output | High torque, controllable speed, compatible voltage range |
-| Motor Driver | L9958 Motor Driver | Brushed DC motor driving and SPI motor control | Integrated H-bridge, SPI diagnostics/control, reduced external circuitry |
-| Voltage Regulator | TPS54202 Adjustable Buck Regulator | Steps system voltage down to 3.3 V logic rail | High efficiency, adjustable output, compact SMT footprint |
-| Indicator LEDs | Green Indicator LED (0603 Package) + Red/Yellow/Green Status LEDs | Visual system state indication (stopped, 50% speed, full speed, fault/status) | Compact SMT package, low power, simple visual feedback |
-
----
