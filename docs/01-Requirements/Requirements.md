@@ -13,5 +13,5 @@ The following sections describe the functional and component requirements for th
 | 12V DC motor  | Able to effectively move whole system | Move quickly and efficiently | No |
 |Motor mounted propeller  | Able to spin on the motor shaft  | A slipless spin for efficient forward or backward movement | No |
 | Water Proof System  | Devices functionality when fully submerged underwater  | Full funcionality when fully submerged | yes |
-| Motor Driver  | Compatability with selected motor  | Able to turn the motor forwards and backwards | No |
+| Motor Driver  | Compatibility with selected motor  | Able to turn the motor forwards and backwards, as well as control speed | No |
 | Powersupply  | Sufficient power to supply selected motor  | No power issues in the system | No |
