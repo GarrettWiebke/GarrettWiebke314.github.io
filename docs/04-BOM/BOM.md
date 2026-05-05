@@ -30,6 +30,8 @@ Feedback Resistor (Buck Converter), 19.1kΩ 0603 | 1 | $0.10 | $0.10 | Yageo | R
 
 The Bill of Materials as a PDF download is available [*here*](PDF_For_BOM_EXAMPLE.pdf).
 
+## Power Budget Section
+
 
 ### Section A — Major Component Maximum Current Consumption
 
