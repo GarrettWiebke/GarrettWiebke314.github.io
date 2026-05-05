@@ -4,299 +4,10 @@ title: Module's Selected Major Components
 
 ## Module's Selected Major Components
 
-The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device. Please note that the first two sections are hypothetical if the team went with brushless DC motor selection for propulsion, but, due to budget constraints, the team will go with a regular DC motor for proof of concept of the embedded system's functionality. 
+The following sections are the selected major components necessary for the actuation module of Team 307's submersible exploration device.
 
-The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a servo motor for steering and depth control, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. 
+The component selection showcases the type of microcontroller used for the module, a DC motor for propulsion, a power regulator for motor power supply and logic voltage, as well as indicator LEDS for when the motor is stopped, 50% speed, or at full speed. All components were selected to meet project constraints and to be surface mount. 
 
-
-
-# 3-Axis Motion Motors
-
-## Brushless DC Motor + Propeller for Propulsion
-
----
-
-*Table 1: BLDC Motor Option 1*
-
-**EMAX Pro Series 2814 730KV Brushless Motor**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC1.png)<br>EMAX Pro Series 2814 730KV Brushless Motor<br>$31.99 each<br>[link to product](http://readymaderc.com) | * Higher thrust capabilities<br>* Efficient for longer run times<br>* Reliable drone-specific BLDC motor<br>* Powerful | * Higher power requirements than desired<br>* Expensive including required components |
-
-**Specifications**
-
-- Model: EMAX Pro Series 2814 730KV Brushless Motor  
-- KV: 730KV  
-- Recommended Propeller: 8-10 inch  
-- Max Thrust: Up to 2.3 kg (depending on prop configuration)  
-- Motor Type: Brushless  
-- Voltage: 6S LiPo (22.2V)  
-- Weight: 155 g  
-- Shaft Diameter: 5 mm  
-
----
-
-*Table 2: BLDC Motor Option 2*
-
-**DD2216 12V 500KV Waterproof ROV Brushless Motor**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC2.png)<br>DD2216 12V 500KV Waterproof ROV Motor<br>$30.00 each<br>[link to product](http://hobbywater.com) | * Water-specific BLDC motor<br>* Working voltage in the desired range<br>* Low-profile package | * Cannot be tested in air<br>* Cooling limitations for extended operation<br>* Limited space for large propeller |
-
-**Specifications**
-
-- Motor KV: 500  
-- Power: 87 W  
-- Load Current: 7.3 A  
-- Working Voltage: 12-16 V  
-- Thrust: 1.2 kg (at 12 V)  
-- Maximum Speed: 6100 RPM  
-- Dimensions: Diameter 28 mm, Height 38.5 mm  
-- Waterproof Depth: Up to 300 m  
-
----
-
-*Table 3: BLDC Motor Option 3*
-
-**RC Boat Brushless Motor 12-24V 300KV Underwater Thruster**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC3.png)<br>RC Boat Brushless Motor 300KV<br>[link to product](http://fruugo.us) | * Water-specific design<br>* Good depth rating<br>* Small profile<br>* Operates within desired voltage range<br>* Built-in propeller | * Least powerful BLDC option<br>* Requires additional waterproof sealing<br>* Lower durability materials |
-
-**Key Specifications**
-
-- Voltage: 12-24 V  
-- Current: 20 A  
-- KV: 300 KV  
-- Materials: Stainless steel bearings, aluminum alloy shell  
-- Propeller compatibility: Designed for PLA and PC propellers  
-- Rotation options: Clockwise and counterclockwise available  
-
----
-
-*Table 4: BLDC Motor Option 4*
-
-**Underwater Brushless Motor 300KV for RC Boat Thruster**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC4.png)<br>Underwater Brushless Motor 300KV<br>$35.95 each<br>[link to product](http://fruugo.us) | * Water-specific motor<br>* Propeller included | * Low durability materials |
-
-**Specifications**
-
-- Motor KV: 300  
-- Working Voltage: 12-24 V  
-
----
-
-*Table 5: BLDC Motor Option 5*
-
-**SunnySky X2826 Brushless Motor**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC5.png)<br>SunnySky X2826 Brushless Motor<br>$39.99 each<br>[link to product](http://fruugo.us) | * Good power range<br>* Reliable supplier<br>* Good datasheet documentation | * Not water-specific |
-
-**Specifications**
-
-- Available KV Ratings: 550 KV or 800 KV  
-
----
-
-*Table 6: BLDC Motor Option 6*
-
-**SunnySky X2820 Brushless Motor**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC6.png)<br>SunnySky X2820 Brushless Motor<br>$34.99 each | * Durable high-strength materials<br>* Relatively lightweight<br>* Good heat dissipation<br>* Quiet operation | * Not water-specific<br>* Relatively low torque |
-
-**Specifications**
-
-- Material: 420 stainless steel  
-- Housing: High-strength aluminum alloy  
-- KV: 500 KV  
-- Shaft: Long or short shaft versions available  
-
----
-
-*Table 7: BLDC Motor Option 7*
-
-**ApisQueen U2 Mini Underwater Thruster**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](BLDC7.png)<br>ApisQueen U2 Mini Underwater Thruster<br>$42.00 each<br>[link to product](https://cdn.shopify.com/s/files/1/0621/5493/2452/files/U2_Mini.igs?v=1700659409) | * Very high RPM<br>* Integrated propeller and ESC<br>* Marine-specific thruster design<br>* Corrosion-resistant composite housing | * Very low torque |
-
-**Specifications**
-
-- Model: U2 Mini  
-- Operating Environment: Freshwater or seawater  
-- Voltage: 12-16 V (3-4S LiPo)  
-- Maximum Current: 8 A  
-- Maximum Power: 130 W  
-- Size: 95.8 mm × 77 mm  
-- Cable Length: > 900 mm  
-- Weight: 210 g  
-- PWM Signal: 1-2 ms at 50 Hz  
-
-**Features**
-
-- One-piece composite housing with corrosion resistance  
-- Low power consumption and high efficiency  
-- Protective ribs prevent foreign objects from entering the propeller  
-- Uses a 500 KV brushless motor  
-
----
-
-## BLDC Choice: Option 7 — ApisQueen U2 Mini Underwater Thruster
-![](BLDC7.png)
-**Rationale**
-
-The ApisQueen U2 Mini is a marine-specific thruster with a compact profile and an integrated propeller and ESC. This significantly simplifies propulsion integration while maintaining efficient power usage. Its corrosion-resistant construction and compatibility with both freshwater and seawater environments make it well-suited for the underwater operation required by the system.
-
-# BLDC LiPo Battery
-
----
-
-*Table 8: BLDC Battery Option 1*
-
-**GForce 30C 2200mAh 3S LiPo Battery (EC3 Connector)**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](LiPO1.png)<br>GForce 30C 2200mAh 3S LiPo Battery<br>$14.90 each<br>[link to product](https://valuehobby.com/30c-2200mah-3s-ec3.html) | * Relatively inexpensive<br>* Comfortable operating voltage<br>* Compact size | * Short runtime (~20 minutes) |
-
-**Specifications**
-
-- Capacity: 2200 mAh  
-- Voltage: 11.1 V (3S LiPo)  
-- Discharge Rating: 30C  
-- Dimensions: 105 mm × 35 mm × 22 mm  
-- Weight: 174.8 g (6.2 oz)  
-- Connector: EC3  
-- Balance Connector: JST-XH  
-
----
-
-*Table 9: BLDC Battery Option 2*
-
-**Spektrum Smart G2 2200mAh 3S 30C LiPo Battery**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](LiPO2.png)<br>Spektrum Smart G2 2200mAh 3S LiPo Battery<br>$29.99 each<br>[link to product](https://www.spektrumrc.com/product/11.1v-2200mah-3s-30c-smart-g2-lipo-battery-ic3/SPMX223S30.html) | * More efficient battery management<br>* Comfortable operating voltage<br>* Compact design | * Slightly more expensive |
-
-**Specifications**
-
-- Voltage: 11.1 V nominal (12.6 V fully charged)  
-- Capacity: 2200 mAh  
-- Discharge Rating: 30C  
-
----
-
-*Table 10: BLDC Battery Option 3*
-
-**Admiral 2200mAh 4S 35C LiPo Battery (XT60 Connector)**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](LiPO3.png)<br>Admiral 2200mAh 4S LiPo Battery<br>$31.69 each<br>[link to product](https://www.motionrc.com/products/admiral-2200mah-4s-14-8v-35c-lipo-battery-with-xt60-connector-epr22004x6) | * Higher power capability<br>* Slightly longer runtime<br>* Compact form factor | * Relatively expensive |
-
-**Specifications**
-
-- Capacity: 2200 mAh  
-- Voltage: 14.8 V (4S LiPo)  
-- Discharge Rating: 35C  
-- Weight: 228 g  
-- Length: 107 mm  
-- Width: 35 mm  
-- Height: 29 mm  
-- Wire Gauge: 12 AWG  
-- ESC Connector: XT60  
-- Balance Connector: JST-XH  
-- Charge Rate: 3C  
-
----
-
-## BLDC Battery Choice: Option 1 — GForce 30C 2200mAh 3S LiPo Battery
-![](LiPO1.png)
-
-**Rationale**
-
-This LiPo battery is a relatively inexpensive and compact option that provides a comfortable operating voltage for the thruster system. While the runtime is somewhat limited, it is sufficient for short test operations and prototype development while keeping system cost and physical size low.
-
-
-# Steering Servo Motors
-
----
-
-*Table 11: Steering Servo Option 1*
-
-**MG995 55g Metal Gear Servo Motor**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](Servo1.png)<br>MG995 Metal Gear Servo Motor<br>$22.43 each<br>[link to product](https://toytooth.com/products/4pcs-mg995-55g-micro-servo-motor-metal-geared-motor-kit-for-rc-car-robot-helicopter-mini-servos-for-arduino-project) | * Inexpensive<br>* Easy to integrate with microcontrollers<br>* Compatible with low-voltage control systems | * Lower torque compared to some alternatives<br>* Can occasionally be unstable |
-
-**Specifications**
-
-- Weight: 55 g  
-- Gear Type: Metal gears  
-- Operating Voltage: Typically 4.8V – 7.2V  
-- Control Method: PWM  
-
----
-
-*Table 12: Steering Servo Option 2*
-
-**Adafruit High Torque Metal Gear Micro Servo (ID: 2307)**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](Servo2.png)<br>Adafruit High Torque Micro Servo<br>$11.95 each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/2307/5154686) | * Reliable torque output<br>* High precision movement<br>* Stable performance | * Relatively expensive for its size<br>* Torque capability may be more than required |
-
-**Specifications**
-
-- Operating Voltage: 6 V DC  
-- Weight: 14.06 g  
-- Gear Type: Metal gears  
-- High torque micro-servo design  
-
----
-
-*Table 13: Steering Servo Option 3*
-
-**MG90D High Torque Metal Gear Micro Servo**
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](Servo3.png)<br>MG90D High Torque Micro Servo<br>$9.95 each<br>[link to product](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1143/5154659) | * High torque output<br>* Comfortable voltage range<br>* Compact low-profile package | * More expensive than some basic servos |
-
-**Specifications**
-
-- Size: 22.8 mm × 12.2 mm × 28.5 mm  
-- Weight: 13.4 g  
-- Operating Voltage: 4.8 – 6 V  
-- Speed:  
-  - 0.10 sec / 60° at 4.8 V  
-  - 0.08 sec / 60° at 6 V  
-- Stall Torque:  
-  - 2.1 kg·cm at 4.8 V  
-  - 2.4 kg·cm at 6 V  
-- Spline Count: 20  
-
----
-
-## Steering Servo Choice: Option 1 — MG995 Metal Gear Servo Motor
-![](Servo1.png)
-
-**Rationale**
-
-The MG995 servo operates within the desired voltage range and is already available for use in the project, effectively reducing cost within the actuation subsystem. While the torque may be somewhat limited for certain steering loads, it remains adequate for the initial design and testing stages. If additional torque becomes necessary, Option 3 (MG90D) can be used as a fallback alternative.
 
 # Microcontroller
 
@@ -433,39 +144,12 @@ The ESP32-S3-WROOM-1 module provides a strong balance between performance and ea
 
 ---
 
----
-
-*Table 23: Motor Driver Option 4*
-
-**IFX9201SG Full Bridge Motor Driver** This is the one provided in class
-
-| **Component** | **Pros** | **Cons** |
-|---|---|---|
-| ![](Driver4.png)<br>IFX9201SG Motor Driver<br>[link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542) | * Designed specifically for 12 V brushed DC motor applications<br>* Simple PWM and direction control interface<br>* Integrated protection features (overcurrent, overtemperature, short circuit) | * Does not support SPI communication<br>* Lower peak current capability than some automotive drivers<br>* Limited configuration and diagnostic feedback |
-
-**Specifications**
-
-- Manufacturer: Infineon Technologies  
-- Motor Type Supported: Brushed DC  
-- Output Configuration: Full H-Bridge  
-- Supply Voltage Range: 6 – 28 V  
-- Peak Output Current: ~6 A  
-- Control Interface: PWM / Direction  
-- Protection Features:  
-  - Overcurrent protection  
-  - Thermal shutdown  
-  - Short circuit protection  
-- Mounting Type: Surface Mount  
-- Package: DSO-14  
-
----
-
 ## DC Motor Choice: Option 1 — GEARMOTOR 140 RPM 6–24V
 ![](DC1.png)
 
 **Rationale**
 
-This gearmotor provides high torque with a manageable rotational speed, making it well suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.
+This gearmotor provides high torque with a manageable rotational speed, making it well-suited for applications requiring controlled motion. Its wide voltage range also makes integration easier within the system’s power architecture. Although it operates at a lower RPM than the other options, the higher torque and controllability make it a better fit for precise mechanical actuation.
 
 # SMT Motor Driver
 
@@ -543,12 +227,37 @@ This gearmotor provides high torque with a manageable rotational speed, making i
 
 ---
 
+*Table 23: Motor Driver Option 4*
+
+**IFX9201SG Full Bridge Motor Driver** This is the one provided in class
+
+| **Component** | **Pros** | **Cons** |
+|---|---|---|
+| ![](Driver4.png)<br>IFX9201SG Motor Driver<br>[link to product](https://www.digikey.com/en/products/detail/infineon-technologies/IFX9201SGAUMA1/5415542) | * Designed specifically for 12 V brushed DC motor applications<br>* Simple PWM and direction control interface<br>* Integrated protection features (overcurrent, overtemperature, short circuit) | * Does not support SPI communication<br>* Lower peak current capability than some automotive drivers<br>* Limited configuration and diagnostic feedback |
+
+**Specifications**
+
+- Manufacturer: Infineon Technologies  
+- Motor Type Supported: Brushed DC  
+- Output Configuration: Full H-Bridge  
+- Supply Voltage Range: 6 – 28 V  
+- Peak Output Current: ~6 A  
+- Control Interface: PWM / Direction  
+- Protection Features:  
+  - Overcurrent protection  
+  - Thermal shutdown  
+  - Short circuit protection  
+- Mounting Type: Surface Mount  
+- Package: DSO-14  
+
+---
+
 ## Motor Driver Choice: Option 1 — L9958 Motor Driver
 ![](Driver1.png)
 
 **Rationale**
 
-The L9958 motor driver provides a fully integrated motor control solution with an SPI interface, allowing the microcontroller to easily communicate with and control the motor system. The integrated H-bridge simplifies circuit design and reduces the number of additional components required on the PCB. Its wide load voltage range and high current capability also make it well suited for driving the selected DC motor within the system.
+The L9958 motor driver provides a fully integrated motor control solution with an SPI interface, allowing the microcontroller to easily communicate with and control the motor system. The integrated H-bridge simplifies circuit design and reduces the number of additional components required on the PCB. Its wide load voltage range and high current capability also make it well-suited for driving the selected DC motor within the system.
 
 
 # Voltage Regulator
@@ -640,7 +349,7 @@ The L9958 motor driver provides a fully integrated motor control solution with a
 
 **Rationale**
 
-The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range allows it to easily regulate a 12 V supply, while the adjustable output enables generation of the 3.3 V rail required by the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well suited for integration on the project PCB.
+The TPS54202 switching regulator provides an efficient and compact solution for stepping down the system voltage to the required logic voltage levels. Its wide input voltage range allows it to easily regulate a 12 V supply, while the adjustable output enables the generation of the 3.3 V rail required by the ESP32 microcontroller and supporting electronics. The small surface-mount package also makes it well-suited for integration on the project PCB.
 
 
 # Indicator LEDs
@@ -716,4 +425,55 @@ The TPS54202 switching regulator provides an efficient and compact solution for 
 
 **Rationale**
 
-The green 0603 LED provides a compact and efficient indicator solution for PCB integration. Its small surface-mount footprint minimizes board space while still providing adequate brightness for status indication. Additionally, the low power consumption and common indicator color make it well suited for visual feedback in the system.
+The green 0603 LED provides a compact and efficient indicator solution for PCB integration. Its small surface-mount footprint minimizes board space while still providing adequate brightness for status indication. Additionally, the low power consumption and common indicator color make it well-suited for visual feedback in the system.
+
+
+## Pinout table (Motor driver, LEDS, ESP32)
+
+# L9958 Motor Driver Pinout
+
+| **L9958 Pin** | **Function** | **ESP32-S3 Connection / Notes** |
+|---|---|---|
+| **1** | DIR | IO39 |
+| **2** | VSO | 3.3V |
+| **3** | SO (MISO) | IO48 |
+| **4** | VS | Motor Supply (6V or 12V) |
+| **5** | OUT1 | Motor Terminal 1 |
+| **6** | GND | GND |
+| **7** | OUT2 | Motor Terminal 2 |
+| **8** | SI (MOSI) | IO47 |
+| **9** | CSN | IO45 |
+| **10** | SCK | IO21 |
+| **11** | DIS (Enable) | IO40 |
+| **12** | PWM | IO41 |
+| **Heat Slug** | Thermal Pad | **GND (Required)** |
+
+## Status LEDs
+
+| **LED** | **Purpose** | **ESP32-S3 Pin** | **Notes** |
+|---|---|---|---|
+| ![](LED_Red.png)<br>Red LED | Motor Stopped | IO16 | Use ~220Ω series resistor |
+| ![](LED_Yellow.png)<br>Yellow LED | Motor Slow (50% PWM) | IO17 | Use ~220Ω series resistor |
+| ![](LED_Green.png)<br>Green LED | Motor Full Speed (100% PWM) | IO18 | Use ~220Ω series resistor |
+
+## Wiring Notes
+
+- **Heat slug must be connected to GND** for thermal dissipation and proper grounding.
+- Connect both **Pin 6 (GND)** and **Heat Slug** directly to the ground plane.
+- Motor supply on **VS** should match motor voltage (**6V or 12V**).
+- Add current-limiting resistors (~220Ω–330Ω) in series with each LED.
+- OUT1 and OUT2 connect directly to the DC motor terminals.
+
+## Final Selected Major Components Summary
+
+The following table summarizes the final major components selected for the actuation module design. Only major active components and electromechanical devices are included.
+
+| **Subsystem** | **Selected Component** | **Primary Function** | **Final Selection Reason** |
+|---|---|---|---|
+| Microcontroller | ESP32-S3-WROOM-1-N4 | Main system controller, SPI communication, PWM generation, wireless capability | Easy development environment, integrated WiFi/Bluetooth, strong peripheral support |
+| DC Motor | GEARMOTOR 140 RPM 6–24V | Mechanical propulsion / actuation output | High torque, controllable speed, compatible voltage range |
+| Motor Driver | L9958 Motor Driver | Brushed DC motor driving and SPI motor control | Integrated H-bridge, SPI diagnostics/control, reduced external circuitry |
+| Voltage Regulator | TPS54202 Adjustable Buck Regulator | Steps system voltage down to 3.3 V logic rail | High efficiency, adjustable output, compact SMT footprint |
+| Indicator LEDs | Green Indicator LED (0603 Package) + Red/Yellow/Green Status LEDs | Visual system state indication (stopped, 50% speed, full speed, fault/status) | Compact SMT package, low power, simple visual feedback |
+
+---
