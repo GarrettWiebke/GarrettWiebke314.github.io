@@ -31,4 +31,4 @@ The bottom layer of copper is connected to ground
 
 ## Resouces
 
-The PCB zip file download is available [*here*](314Finalupdates.zip).
+The PCB zip file download is available [*here*](314PCB-Wiebke_DrillGerber1.zip).
